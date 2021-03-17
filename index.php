@@ -157,7 +157,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p> My name is Maxwell Okumu and I am a software developer from Juja, Central Kenya. I am a Bsc.Computer Technology undergrad. Student at the Jomo Kenyatta University Of Agriculture And Technology. I love to solve problems and write software that can help people accomplish their goals.</p>
+                    <p> My name is Maxwell Okumu and I am a software developer based in Nairobi, Kenya. I am a Bsc.Computer Technology undergrad. Student at the Jomo Kenyatta University Of Agriculture And Technology. I love to solve problems and write software that can help people accomplish their goals.</p>
                 </div>
                 <div class="col-lg-4">
                     <p>Alongside writing software, I enjoy staying up to date with the visual and performing arts, camping, and going roller skating with my friends. Thanks for coming to my website, I hope you enojoy what you find.</p>
