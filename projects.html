@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Projects | Maxwell Okumu — Systems Architect & Full-Stack Developer</title>
+  <meta name="description" content="Complete portfolio of Maxwell Okumu — institutional systems, AI engineering projects, commercial web platforms, and research work. Systems Architect and IT Consultant based in Nairobi, Kenya."/>
+  <meta name="keywords" content="Maxwell Okumu projects, JKUAT portal, Staqpesa, Pinehouse Franchise, Toilet Africa Initiative, Reflex Concepts, Trendsetters Blog CMS, QR Attendance System, AI Academic Evaluation, PHP Laravel projects Kenya"/>
+  <meta name="author" content="Maxwell Okumu"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://maxwellokumu.github.io/projects.html"/>
+  <meta property="og:title" content="All Projects | Maxwell Okumu"/>
+  <meta property="og:description" content="Complete portfolio of institutional, commercial, and research projects by Maxwell Okumu — Systems Architect, Nairobi Kenya."/>
+  <meta property="og:url" content="https://maxwellokumu.github.io/projects.html"/>
+<meta property="og:image" content="https://maxwellokumu.github.io/assets/images/og-pic.jpg"/>
+<link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal: #38bdf8; --teal-dim: rgba(56,189,248,0.12); --teal-glow: rgba(56,189,248,0.25); --teal-border: rgba(56,189,248,0.3);
+      --bg: #080d14; --bg2: #0d1420; --bg3: #111d2e;
+      --surface: rgba(255,255,255,0.03); --surface2: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.07); --border2: rgba(255,255,255,0.12);
+      --text: #f0f4f8; --text2: #8fa3b8; --text3: #4a6275;
+      --font-display: 'Syne', sans-serif; --font-body: 'DM Sans', sans-serif; --font-mono: 'DM Mono', monospace;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 16px; line-height: 1.7; overflow-x: hidden; cursor: none; }
+    .cursor { position: fixed; width: 10px; height: 10px; background: var(--teal); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); mix-blend-mode: screen; }
+    .cursor-ring { position: fixed; width: 36px; height: 36px; border: 1.5px solid var(--teal-border); border-radius: 50%; pointer-events: none; z-index: 9998; transform: translate(-50%,-50%); transition: width 0.2s, height 0.2s, border-color 0.2s; }
+    body:has(a:hover) .cursor-ring, body:has(button:hover) .cursor-ring { width: 52px; height: 52px; border-color: var(--teal); }
+    body::before { content: ''; position: fixed; inset: 0; background-image: radial-gradient(ellipse 80% 60% at 10% 20%, rgba(56,189,248,0.04) 0%, transparent 60%); pointer-events: none; z-index: 0; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 5vw; height: 64px; display: flex; align-items: center; justify-content: space-between; background: rgba(8,13,20,0.9); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text2); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--teal); }
+    .nav-cta { font-size: 13px; font-weight: 500; color: var(--bg); background: var(--teal); padding: 8px 20px; border-radius: 4px; text-decoration: none; transition: opacity 0.2s; }
+    .nav-cta:hover { opacity: 0.85; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { width: 24px; height: 1.5px; background: var(--text2); display: block; }
+    .mobile-menu { position: fixed; inset: 0; background: var(--bg); z-index: 99; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--text2); text-decoration: none; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--teal); }
+
+    /* PAGE HEADER */
+    .page-header { padding: 140px 5vw 80px; max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--text3); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 28px; }
+    .breadcrumb a { color: var(--teal); text-decoration: none; }
+    .breadcrumb a:hover { opacity: 0.7; }
+    .breadcrumb span { color: var(--text3); }
+    .page-header h1 { font-family: var(--font-display); font-size: clamp(40px, 6vw, 72px); font-weight: 800; line-height: 1; letter-spacing: -0.03em; margin-bottom: 20px; }
+    .page-header h1 span { color: var(--teal); }
+    .page-header p { font-size: 18px; color: var(--text2); max-width: 600px; font-weight: 300; line-height: 1.7; }
+    .project-count { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-family: var(--font-mono); font-size: 12px; color: var(--teal); border: 1px solid var(--teal-border); padding: 6px 14px; border-radius: 2px; }
+
+    /* FILTER BAR */
+    .filter-bar { padding: 0 5vw 48px; max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; display: flex; gap: 10px; flex-wrap: wrap; }
+    .filter-btn { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); border: 1px solid var(--border); background: transparent; padding: 8px 16px; border-radius: 2px; cursor: pointer; transition: all 0.2s; }
+    .filter-btn:hover, .filter-btn.active { color: var(--teal); border-color: var(--teal-border); background: var(--teal-dim); }
+
+    /* PROJECTS GRID */
+    .projects-section { padding: 0 5vw 120px; max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+    .category-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 24px; margin-top: 56px; display: flex; align-items: center; gap: 10px; }
+    .category-label::before { content: ''; width: 24px; height: 1px; background: var(--teal); }
+    .category-label:first-child { margin-top: 0; }
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 16px; }
+    .projects-grid.two-col { grid-template-columns: repeat(2, 1fr); }
+
+    /* PROJECT CARD */
+    .project-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.3s, transform 0.3s; display: flex; flex-direction: column; }
+    .project-card:hover { border-color: var(--teal-border); transform: translateY(-4px); }
+    .project-card.featured-card { background: var(--bg3); border-color: var(--teal-border); }
+    .project-card.featured-card::before { content: ''; display: block; height: 2px; background: linear-gradient(90deg, var(--teal), transparent); }
+    .project-img { width: 100%; aspect-ratio: 16/9; background: var(--bg3); overflow: hidden; position: relative; }
+    .project-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .project-card:hover .project-img img { transform: scale(1.04); }
+    .project-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 40px; background: linear-gradient(135deg, var(--bg3), var(--bg2)); }
+    .project-img-label { position: absolute; left: 12px; bottom: 12px; font-size: 10px; font-family: var(--font-mono); letter-spacing: 0.14em; color: var(--teal); background: rgba(8,13,20,0.82); border: 1px solid var(--teal-border); border-radius: 999px; padding: 5px 10px; backdrop-filter: blur(8px); }
+    .project-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+    .project-num { font-family: var(--font-mono); font-size: 11px; color: var(--text3); letter-spacing: 0.15em; margin-bottom: 10px; }
+    .project-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 700; margin-bottom: 8px; line-height: 1.2; }
+    .project-role-label { font-size: 12px; color: var(--teal); font-family: var(--font-mono); margin-bottom: 14px; letter-spacing: 0.06em; }
+    .project-card p { font-size: 14px; color: var(--text3); line-height: 1.7; flex: 1; }
+    .project-footer { margin-top: 20px; display: flex; flex-direction: column; gap: 14px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag { font-size: 11px; font-family: var(--font-mono); color: var(--text3); border: 1px solid var(--border); padding: 4px 9px; border-radius: 2px; letter-spacing: 0.06em; display: inline-flex; align-items: center; gap: 5px; }
+    .tag img { width: 13px; height: 13px; object-fit: contain; }
+    .project-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .project-link { font-size: 12px; font-family: var(--font-mono); color: var(--teal); text-decoration: none; border: 1px solid var(--teal-border); padding: 7px 14px; border-radius: 3px; transition: background 0.2s; letter-spacing: 0.06em; }
+    .project-link:hover { background: var(--teal-dim); }
+    .project-link.secondary { color: var(--text3); border-color: var(--border); }
+    .project-link.secondary:hover { color: var(--text); border-color: var(--border2); background: var(--surface2); }
+
+    /* HIDDEN STATE */
+    .project-card[data-hidden="true"] { display: none; }
+
+    /* FOOTER */
+    footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 48px 5vw; position: relative; z-index: 1; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer-logo { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--text); }
+    .footer-logo span { color: var(--teal); }
+    .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+    .footer-links a { font-size: 13px; color: var(--text3); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-copy { font-size: 12px; color: var(--text3); font-family: var(--font-mono); width: 100%; text-align: center; padding-top: 32px; border-top: 1px solid var(--border); margin-top: 24px; }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 700px) {
+      .projects-grid { grid-template-columns: 1fr; }
+      .projects-grid.two-col { grid-template-columns: 1fr; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="index.html#about" onclick="closeMobile()">About</a>
+  <a href="index.html#experience" onclick="closeMobile()">Experience</a>
+  <a href="projects.html" onclick="closeMobile()">All Projects</a>
+  <a href="blog.html" onclick="closeMobile()">Blog</a>
+  <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<nav role="navigation">
+  <a href="index.html" class="nav-logo">M<span>.</span>Okumu</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="index.html#insights">Insights</a></li>
+  </ul>
+  <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="breadcrumb">
+    <a href="index.html">M.Okumu</a>
+    <span>/</span>
+    <span>All Projects</span>
+  </div>
+  <h1>All <span>Projects</span></h1>
+  <p>From AI-powered academic systems to institutional portals, commercial platforms, and research tools — every engagement built to outlive the project brief.</p>
+  <div class="project-count">12 Projects · Institutional · Commercial · Research · AI</div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="institutional">Institutional</button>
+  <button class="filter-btn" data-filter="ai">AI & Research</button>
+  <button class="filter-btn" data-filter="commercial">Commercial</button>
+  <button class="filter-btn" data-filter="media">Media & CMS</button>
+</div>
+
+<!-- ─── AI & RESEARCH ─── -->
+<div class="projects-section">
+  <div class="category-label reveal">AI & Research Systems</div>
+  <div class="projects-grid two-col reveal">
+
+    <!-- AI EVALUATION -->
+    <div class="project-card featured-card" data-category="ai">
+      <div class="project-img">
+        <div class="project-img-placeholder">🤖</div>
+        <div class="project-img-label">FLAGSHIP · AI SYSTEM</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">FLAGSHIP · 001</div>
+        <h3>AI-Assisted Academic Evaluation System</h3>
+        <p class="project-role-label">Lead Systems Architect · JKUAT</p>
+        <p>A multi-pass evaluation pipeline that ingests student submissions, parses unstructured PDFs into structured data, and maps content against a 20-mark rubric using LLM evaluation. Addresses evaluator bias through algorithmic fairness at institutional scale — 92% faster than manual review, multi-pass bias mitigation, audit trail generation.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"/>Python</span>
+            <span class="tag"><img src="https://cdn.simpleicons.org/anthropic/000000" alt="Anthropic" style="filter:invert(1) brightness(0.7)"/>Anthropic API</span>
+            <span class="tag">LLM Pipelines</span>
+            <span class="tag">PDF Parsing</span>
+            <span class="tag">Algorithmic Fairness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QR ATTENDANCE -->
+    <div class="project-card" data-category="ai institutional">
+      <div class="project-img">
+        <img src="assets/images/project-league.png" alt="QR-Based Attendance System" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">Secure Attendance</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">003</div>
+        <h3>QR-Based Attendance System</h3>
+        <p class="project-role-label">Systems Architect</p>
+        <p>Designed a secure, QR-driven attendance infrastructure as a privacy-respecting alternative to biometric systems. Explored blockchain-based tamper-proofing for audit trails, addressing both security and data privacy concerns in institutional settings. Draws on IBM Blockchain Mastery certification.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.simpleicons.org/ibm/052FAD" alt="IBM"/>IBM Blockchain</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS"/>JavaScript</span>
+            <span class="tag">QR Infrastructure</span>
+            <span class="tag">Data Privacy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIXTURES ENGINE -->
+    <div class="project-card" data-category="ai">
+      <div class="project-img">
+        <div class="project-img-placeholder">⚙️</div>
+        <div class="project-img-label">Fixtures Engine</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">004</div>
+        <h3>Fixtures Generation Engine</h3>
+        <p class="project-role-label">Algorithm Designer</p>
+        <p>An algorithmic scheduling system that generates sport and event fixture lists from complex constraint sets — teams, venues, time windows, fairness rules. Built for institutional league management with configurable rulesets and conflict resolution.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag">Algorithms</span>
+            <span class="tag">Constraint Solving</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS"/>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── INSTITUTIONAL ─── -->
+  <div class="category-label reveal" style="margin-top:64px;">Institutional Platforms</div>
+  <div class="projects-grid reveal">
+
+    <!-- JKUSA ALUMNI -->
+    <div class="project-card" data-category="institutional">
+      <div class="project-img">
+        <img src="assets/images/project-jkusaonline.png" alt="JKUAT Alumni Online Portal" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">Production Portal</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">002</div>
+        <h3>JKUAT Alumni Online Portal</h3>
+        <p class="project-role-label">Lead Systems Architect · Commissioned</p>
+        <p>A commissioned, production-grade institutional portal serving thousands of JKUAT alumni across Kenya and the diaspora. Multi-module architecture: CMS, role-based access, clubs management, leagues, alumni directory, reporting and analytics visualisation. Features 2FA, #1 SEO rank, AMP concepts, and REST API integration.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP / Laravel</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>SQL</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"/>Bootstrap</span>
+            <span class="tag">Role-Based Access</span>
+            <span class="tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://jkusaonline.co.ke" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAQPESA -->
+    <div class="project-card" data-category="institutional commercial">
+      <div class="project-img">
+        <img src="assets/images/project-staqpesa.png" alt="Staqpesa SaaS Platform" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">SaaS · Finance</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">006</div>
+        <h3>Staqpesa.com</h3>
+        <p class="project-role-label">Backend Developer · 3-person team</p>
+        <p>Cloud-based savings/investment group accounting SaaS platform. As chief backend developer, responsible for secure database communication, client-side and server-side validation, and security hardening against SQL injections, directory traversals, denial of service, and man-in-the-middle attacks.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>MySQL</span>
+            <span class="tag">Security Hardening</span>
+            <span class="tag">SaaS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.staqpesa.com" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PINEHOUSE -->
+    <div class="project-card" data-category="commercial institutional">
+      <div class="project-img">
+        <img src="assets/images/project-pinehouse.png" alt="Pinehouse Franchise Platform" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">E-Commerce + POS</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">007</div>
+        <h3>Pinehouse Franchise</h3>
+        <p class="project-role-label">Full-Stack Engineer · Lead</p>
+        <p>Comprehensive digital platform for a leading suits-making franchise. Features precision customer measurement capture, online payment processing, POS system integration, automated invoice generation, and email/WhatsApp integration for seamless communication. Built for operational efficiency across in-store and online channels.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>SQL</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS"/>JavaScript</span>
+            <span class="tag">POS Integration</span>
+            <span class="tag">Payments</span>
+          </div>
+          <div class="project-links">
+            <a href="https://pinehouse.co.ke" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── COMMERCIAL & WEB ─── -->
+  <div class="category-label reveal" style="margin-top:64px;">Commercial & Web Platforms</div>
+  <div class="projects-grid reveal">
+
+    <!-- REFLEX CONCEPTS SITE -->
+    <div class="project-card" data-category="commercial">
+      <div class="project-img">
+        <img src="assets/images/project-reflex.png" alt="Reflex Concepts Website" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">Agency Platform</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">008</div>
+        <h3>Reflex Concepts Website</h3>
+        <p class="project-role-label">Full-Stack Engineer · Reflex Concepts KE</p>
+        <p>Digital presence for a creative design and branding agency. Features portfolio showcase, integrated inquiry system, and dynamic CMS for easy updates. Provides a sleek, responsive experience that reflects the innovative spirit of the brand.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>SQL</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"/>Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://reflexconcepts.co.ke" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THE UGANDAN -->
+    <div class="project-card" data-category="commercial media">
+      <div class="project-img">
+        <img src="assets/images/project-ugandan.png" alt="The Ugandan News Platform" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">News Platform</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">009</div>
+        <h3>The Ugandan.com</h3>
+        <p class="project-role-label">Co-Developer · 2-person team</p>
+        <p>News and media platform focused on delivering timely updates and insightful stories about Uganda. Responsive design, dynamic CMS, and social media integration. Built using Elementor Pro and SQL — ensuring fast performance and an intuitive user experience across devices.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"/>WordPress</span>
+            <span class="tag">Elementor Pro</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>SQL</span>
+            <span class="tag">Media Platform</span>
+          </div>
+          <div class="project-links">
+            <a href="https://theugandan.com" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOILET AFRICA -->
+    <div class="project-card" data-category="commercial">
+      <div class="project-img">
+        <img src="assets/images/project-toiletafrica.png" alt="Toilet Africa Initiative Website" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">NGO Platform</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">010</div>
+        <h3>Toilet Africa Initiative</h3>
+        <p class="project-role-label">Web Developer · Full Platform</p>
+        <p>Digital platform for an organisation dedicated to improving sanitation across Africa. Features interactive tools for tracking project progress, donation management, and community engagement. Facilitates efficient stakeholder communication and provides real-time updates on sanitation projects.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"/>WordPress</span>
+            <span class="tag">Donation Management</span>
+            <span class="tag">NGO Platform</span>
+          </div>
+          <div class="project-links">
+            <a href="https://toiletafricainitiative.org/" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ─── MEDIA & CMS ─── -->
+  <div class="category-label reveal" style="margin-top:64px;">Media, CMS & Content Systems</div>
+  <div class="projects-grid reveal">
+
+    <!-- TRENDSETTERS CMS -->
+    <div class="project-card" data-category="media">
+      <div class="project-img">
+        <img src="assets/images/project-tsblog.png" alt="Trendsetter Blog CMS" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">SEO-Ready CMS</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">005</div>
+        <h3>Trendsetter Blog CMS</h3>
+        <p class="project-role-label">Architect & Engineer · Trendsetters Inc</p>
+        <p>Custom-built content management system with SEO optimisation baked into the architecture — structured data schemas, canonical URL management, meta automation, and editorial workflow. A production system with powerful blogging interface empowering bloggers to manage content, customise their site, and engage audiences. Not a WordPress theme.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS"/>JavaScript</span>
+            <span class="tag">CMS Architecture</span>
+            <span class="tag">SEO Systems</span>
+          </div>
+          <div class="project-links">
+            <a href="http://trendsetterblog.epizy.com" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRENDSETTERS MAIN SITE -->
+    <div class="project-card" data-category="media commercial">
+      <div class="project-img">
+        <img src="assets/images/project-tshome.png" alt="Trendsetters Inc Official Website" loading="lazy" width="600" height="338"/>
+        <div class="project-img-label">Multisite Platform</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">011</div>
+        <h3>Trendsetters Inc — Official Website</h3>
+        <p class="project-role-label">Architect & Developer · Founder</p>
+        <p>Official website for Trendsetters Inc — a multisite platform with APIs giving functionality to the Blog and Events modules. External sites linked via APIs: Trendsetters Events and Trendsetters Blog. Part of the award-winning digital ecosystem that earned the 2021 Contribution to Innovation &amp; Technology Award.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"/>WordPress Multisite</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Events Module</span>
+            <span class="tag">Blog CMS</span>
+          </div>
+          <div class="project-links">
+            <a href="http://trendsetters.co.ke" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THIS PORTFOLIO SITE -->
+    <div class="project-card" data-category="commercial">
+      <div class="project-img">
+        <img src="assets/images/project-portfolio.png" alt="Maxwell Okumu Portfolio Website" loading="lazy" width="600" height="338" onerror="this.parentElement.innerHTML='<div class=&quot;project-img-placeholder&quot;>🌐</div>'"/>
+        <div class="project-img-label">Portfolio · This Site</div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">012</div>
+        <h3>Maxwell Okumu — Portfolio v2</h3>
+        <p class="project-role-label">Design & Development · Self</p>
+        <p>This portfolio — a fully custom-built, single-file static site designed for GitHub Pages hosting. Dark systems aesthetic, custom cursor, scroll animations, JSON-LD structured data, semantic HTML5, and zero framework dependencies. Optimised for SEO, performance, and Lighthouse scores.</p>
+        <div class="project-footer">
+          <div class="tag-row">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"/>HTML5</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"/>CSS3</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS"/>Vanilla JS</span>
+            <span class="tag">JSON-LD SEO</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+          <div class="project-links">
+            <a href="https://maxwellokumu.github.io" target="_blank" rel="noopener" class="project-link">View Live ↗</a>
+            <a href="https://github.com/maxwellokumu" target="_blank" rel="noopener" class="project-link secondary">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">M<span>.</span>Okumu</div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://github.com/maxwellokumu" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2025 Maxwell Okumu · Systems Architect · IT Consultant · Nairobi, Kenya</p>
+  </div>
+</footer>
+
+<script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let cx = 0, cy = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { cx = e.clientX; cy = e.clientY; });
+  (function anim() { cursor.style.left = cx+'px'; cursor.style.top = cy+'px'; rx+=(cx-rx)*0.12; ry+=(cy-ry)*0.12; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(anim); })();
+
+  // Hamburger
+  const hb = document.getElementById('hamburger');
+  const mm = document.getElementById('mobileMenu');
+  hb.addEventListener('click', () => { const o = mm.classList.toggle('open'); hb.setAttribute('aria-expanded', o); });
+  function closeMobile() { mm.classList.remove('open'); hb.setAttribute('aria-expanded', false); }
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card[data-category]');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const cats = card.dataset.category || '';
+        if (filter === 'all' || cats.includes(filter)) {
+          card.removeAttribute('data-hidden');
+          card.style.display = '';
+        } else {
+          card.setAttribute('data-hidden', 'true');
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

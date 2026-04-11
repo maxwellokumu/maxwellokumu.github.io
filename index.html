@@ -1,928 +1,1454 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Meta Charset & Viewport -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maxwell Okumu | Systems Architect & IT Consultant | Nairobi, Kenya</title>
+  <meta name="description" content="Maxwell Okumu is a Systems Architect, IT Consultant, and Agentic AI Engineer based in Nairobi, Kenya. Lecturer at JKUAT. Founder of Trendsetters Inc. Designing intelligent systems for institutions across Kenya and beyond."/>
+  <meta name="keywords" content="Maxwell Okumu, Systems Architect Kenya, IT Consultant Nairobi, Agentic AI Systems Engineer, Software Engineering Lecturer JKUAT, IT Audit Kenya, institutional data infrastructure, AI-assisted academic evaluation, zero trust security Kenya, IT governance consultant Kenya, Full Stack Developer Kenya, PHP Laravel Developer Nairobi, Blockchain Developer Kenya"/>
+  <meta name="author" content="Maxwell Okumu"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#080d14"/>
+  <link rel="canonical" href="https://maxwellokumu.github.io/"/>
+<link rel="icon" type="image/png" href="assets/images/favicon.png"/>
 
-    <!-- Meta Tags -->
-    <meta name="description" content="Maxwell Okumu Personal Website">
-    <meta name="author" content="Maxwell Okumu">
-    <meta name="keywords" content="Maxwell Okumu, Trendsetters, Programmer, JKUAT, Booker Academy, Blockchain developers, guy dangerous">
-    <meta property="og:title" content="Explore Cyberspace through the eyes of a webmaster">
-    <meta property="og:url" content="https://maxwellokumu.github.io">
-    <meta property="og:image" content="https://maxwellokumu.github.io/maxwell.png">
-    <meta property="og:description" content="A peak into the personal portfolio of a 21st century Web Master!">
-    <meta property="og:site_name" content="Maxwell Okumu Personal Website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://maxwellokumu.github.io/"/>
+  <meta property="og:title" content="Maxwell Okumu | Systems Architect & IT Consultant"/>
+  <meta property="og:site_name" content="Maxwell Okumu"/>
+<meta property="og:image" content="https://maxwellokumu.github.io/assets/images/og-pic.jpg"/>
+  <meta property="og:description" content="Designing, auditing, and engineering intelligent systems that power institutions — from secure data infrastructures to autonomous AI-driven platforms."/>
 
-    <!-- Title & Favicon -->
-    <title>Maxwell Okumu the Web Master</title>
-    <link rel="shortcut icon" href="static/img/fav.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Maxwell Okumu | Systems Architect & IT Consultant"/>
+<meta name="twitter:image" content="https://maxwellokumu.github.io/assets/images/og-pic.jpg"/>
+  <meta name="twitter:description" content="Systems Architect · IT Consultant · Agentic AI Engineer · Lecturer at JKUAT · Founder"/>
 
-    <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
 
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-    <link href="css/mycss.css" rel="stylesheet">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://maxwellokumu.github.io/#maxwell",
+        "name": "Maxwell Okumu",
+        "jobTitle": ["Systems Architect", "IT Consultant", "Agentic Systems Engineer", "Lecturer", "Founder"],
+        "description": "Systems Architect and IT Consultant based in Nairobi, Kenya. Lecturer at JKUAT Department of Computing. Founder of Trendsetters Inc.",
+        "url": "https://maxwellokumu.github.io/",
+"image": "https://maxwellokumu.github.io/assets/images/og-pic.jpg",
+        "sameAs": [
+          "https://github.com/maxwellokumu",
+          "https://www.linkedin.com/in/maxwellokumu",
+          "https://stackoverflow.com/users/10407542/maxwell-okumu"
+        ],
+        "alumniOf": {"@type": "CollegeOrUniversity", "name": "Jomo Kenyatta University of Agriculture and Technology", "sameAs": "https://www.jkuat.ac.ke"},
+        "worksFor": {"@type": "CollegeOrUniversity", "name": "Jomo Kenyatta University of Agriculture and Technology"},
+        "knowsAbout": ["Systems Architecture", "IT Audit", "Agentic AI Systems", "Software Engineering", "IT Governance", "Data Infrastructure", "PHP", "Laravel", "Python", "Blockchain"],
+        "address": {"@type": "PostalAddress", "addressLocality": "Nairobi", "addressCountry": "KE"}
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Maxwell Okumu — Systems Architecture & IT Consulting",
+        "description": "IT Audit, Systems Architecture, Agentic AI Engineering, and institutional data infrastructure consulting.",
+        "url": "https://maxwellokumu.github.io/",
+        "areaServed": "Kenya",
+        "provider": {"@id": "https://maxwellokumu.github.io/#maxwell"}
+      }
+    ]
+  }
+  </script>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <!-- AOS Parallax Sliding -->
-    <link rel="stylesheet" href="dist/aos.css">
-
-    <!-- Apple Touch Icons & Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- W3.CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <!-- Custom Font Faces -->
-    <style>
-        @font-face {
-            font-family: Decovar;
-            src: url("https://d33wubrfki0l68.cloudfront.net/35138c441efe5077f7f1b5437d8033d58b98e203/952fc/assets/fonts/variable/decovaralpha-vf.subset.ttf") format("truetype-variations");
-        }
-        @font-face {
-            font-family: "Source Sans";
-            src: url("https://d33wubrfki0l68.cloudfront.net/f0f35e1c78339e9ab650f7d10a2b30af1ec0104a/147e5/assets/fonts/variable/sourcesansvariable-roman.ttf") format("truetype-variations");
-            font-weight: 1 999;
-        }
-        .decovar, .decovar2, .decovar3 {
-            all: unset;
-            display: block;
-            text-align: center;
-            font-family: Decovar;
-        }
-        .source-sans, .source-sans2, .source-sans3 {
-            all: unset;
-            display: block;
-            text-align: center;
-            font-family: "Source Sans";
-            transition: font-weight 0.45s ease-out;
-        }
-        .source-sans:hover, .source-sans2:hover {
-            font-weight: 999;
-        }
-        .source-sans3:hover {
-            font-weight: 200;
-        }
-        .source-sans2 {
-            font-weight: 600;
-        }
-        .source-sans3 {
-            font-weight: 900;
-        }
-        .decovar {
-            color: var(--green3);
-            font-variation-settings: "BLDA" 506.944, "TRMC" 1000, "TRMK" 324.653;
-        }
-        .decovar2 {
-            color: rgb(207, 63, 135);
-            font-variation-settings: "WMX2" 580.838, "TRMB" 1000;
-        }
-        .decovar3 {
-            color: rgb(111, 50, 173);
-            font-variation-settings: "TRMF" 159.18, "TRME" 1000;
-        }
-        @media (min-width: 40em) {
-            .decovar, .decovar2, .decovar3, .source-sans, .source-sans2, .source-sans3 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
-
-    <!-- Asynchronous Ad Scripts -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-8204866414481771",
-            enable_page_level_ads: true
-        });
-    </script>
-</head>
-
-
-<body id="page-top" class="index">
-    
-
-
-
-
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                
-                <a class="navbar-brand" href="#page-top">Maxwell Okumu</a>
-              
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#hobbies">Affiliations</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    
-    <header class="large-parallax" style="background-image:url(img/pittskyline.jpg)">
-        <div class="container" >
-            <div class="row" >
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/DaveCircle.png" alt="">
-                    <div class="intro-text">
-                        </button>
-                        <div class="source-sans">
-                       Maxwell Okumu
-                        </div>
-                        
-                        <hr class="star-light">
-                        <span class="skills">Full stack web apps developer - Tester - Creater Of Worlds</span>
-                    </div>
-                    
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" data-aos="slide-left" data-aos-easing="ease-in-sine" data-aos-duration="600" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-
-<div class="row">
-    <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-            <div class="caption">
-                <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-            </div>
-            <img src="img/portfolio/website.png" class="img-responsive" alt="">
-        </a>
-    </div>
-    <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-            <div class="caption">
-                <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-            </div>
-            <img src="img/portfolio/jkusaonline.png" class="img-responsive" alt="">
-        </a>
-    </div>
-    <div class="col-sm-4 portfolio-item">
-        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-            <div class="caption">
-                <div class="caption-content">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-            </div>
-            <img src="img/portfolio/staqpesa.png" class="img-responsive" alt="">
-        </a>
-    </div>
-
-</div>
-
-            <div class="row">
-
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/tshome.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ugandan.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/jkusaent.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/pinehouse.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/toiletafrica.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/reflex.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            
-            </div>
-
-           <!-- <div class="row resumeRow">
-                    <h2 class="col-lg-12 text-center" style="Color:White" for="collapseOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-----Resume-----</h2>
-                <div class="col-lg-12 text-center collapse" id="collapseOne">
-                   <a href="resume/maxresume.pdf">CV <h2 style="Color:blue">view CV!</h2></a>
-                </div>
-            </div>-->
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" >
-        <div class="container" id="about" data-aos="slide-right" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p> Maxwell Okumu is a webmaster, Full Stack Software Engineer, and Web Developer with a passion for building robust digital solutions. With expertise in PHP, SQL, JavaScript, and Bootstrap, he crafts efficient, scalable web applications that enhance user experiences and streamline business operations.</p>
-<p>
-Throughout his career, Maxwell has taken on key roles, such as Business Systems Analyst at Kenya Revenue Authority, where he optimized business processes, and Full Stack Developer at Reflex Concepts KE, where he delivered innovative, client-focused solutions. </p>
-
-                </div>
-                <div class="col-lg-4">
-                   
-                    <p>He has also led projects like the JKUSA Online Portal, Pinehouse Franchise, and Toilet Africa Initiative, demonstrating his ability to design and implement systems that meet diverse needs.</p>
-                    <p>
-Maxwell is committed to pushing the boundaries of web development, combining technical skill with a deep understanding of user-centered design. His goal is to continue building powerful, user-friendly platforms that solve real-world problems.</p>
-<h5>Caption may or may not be AI generated</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-<div class="jumbotron" align="center">
-    <div class="w3-card" align="center">
-        <div class="container">
-            <h2>SPECIALIZATION</h2>
-            <p>UI/UX::Intergration::Database Design</p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                    aria-valuemax="100" style="width:86%">
-                    PHP,Java (Core)
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                    aria-valuemax="100" style="width:70%">
-                    MYSQL (PHPMYADMIN, SQL SERVER), Postgress, MongoDB
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                    aria-valuemax="100" style="width:68%">
-                    Bootstrap,Tailwind
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                    aria-valuemax="100" style="width:68%">
-                    css (v3)
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                    aria-valuemax="100" style="width:73%">
-                    Blockchain (IBM Certified Blockchain Developer)
-                </div>
-            </div>
-
-            <div class="progress">
-                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                    aria-valuemax="100" style="width:60%">
-                    Java
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                    aria-valuemax="100" style="width:80%">
-                    Javascript
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-
-<!-- Hobbie Section -->
-    <section id="hobbies" data-aos="slide-left" data-aos-easing="ease-in-sine" data-aos-duration="600"  >
-        <div class="container" >
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Affiliations.</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row" >
-                <div class="col-sm-4 portfolio-item"  >
-                    <a href="#hobbiesModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/kralogo.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#hobbiesModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/tstvlogo.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#hobbiesModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/reflex.jpeg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-13 text-center">
-                    <h2>Contact Me.</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-         <form name="sentMessage" id="contactForm" action="https://formspree.io/maxmaex69@gmail.com" method="POST" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label name="name" >Name</label>
-                                <input type="text" name="NAme" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label name="emailaddress">Email Address</label>
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label name="phone">Phone Number</label>
-                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label name="message" >Message</label>
-                                <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Nairobi, Kenya </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Social Media</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/max.m.maex" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/maxwellokumu" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/guy-dangerous" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://stackoverflow.com/users/10407542/maxwell-okumu?" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
-                            </li>
-                               <li>
-                                <a href="https://www.reddit.com/user/guy_dangerous69/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-reddit"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Me!</h3>
-                        <p>Before AI takes over! Drop me a line,  before I’m replaced by a robot!!</p>
-                        <p><a href="mailto:oomaxwell23@gmail.com">oomaxwell23@gmail.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Maxwell Okumu 2k24
-                        <!-- <div class="counter"> <?php 
-$handle = fopen("counter.txt", "r");
-if(!$handle){
- echo "could not open the file" ;
-}
-else {
-    $counter = ( int ) fread ($handle,20) ;
-    fclose ($handle) ;
-    $counter++ ;
-    echo" <strong style='color:yellow'>Welcome! You are visitor no ".  $counter . "  today</strong >  " ;
-$handle =  fopen("counter.txt", "w" ) ;
-fwrite($handle,$counter) ;
-fclose ($handle) ;
+    :root {
+      --teal: #38bdf8;
+      --teal-dim: rgba(56, 189, 248, 0.12);
+      --teal-glow: rgba(56, 189, 248, 0.25);
+      --teal-border: rgba(56, 189, 248, 0.3);
+      --bg: #080d14;
+      --bg2: #0d1420;
+      --bg3: #111d2e;
+      --surface: rgba(255,255,255,0.03);
+      --surface2: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.07);
+      --border2: rgba(255,255,255,0.12);
+      --text: #f0f4f8;
+      --text2: #8fa3b8;
+      --text3: #4a6275;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-mono: 'DM Mono', monospace;
     }
-?>-->
+
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 16px; line-height: 1.7; overflow-x: hidden; cursor: none; }
+
+    .cursor { position: fixed; width: 10px; height: 10px; background: var(--teal); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); transition: width 0.2s ease, height 0.2s ease; mix-blend-mode: screen; }
+    .cursor-ring { position: fixed; width: 36px; height: 36px; border: 1.5px solid var(--teal-border); border-radius: 50%; pointer-events: none; z-index: 9998; transform: translate(-50%, -50%); transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease; }
+    body:has(a:hover) .cursor, body:has(button:hover) .cursor { width: 20px; height: 20px; }
+    body:has(a:hover) .cursor-ring, body:has(button:hover) .cursor-ring { width: 52px; height: 52px; border-color: var(--teal); }
+
+    body::before { content: ''; position: fixed; inset: 0; background-image: radial-gradient(ellipse 80% 60% at 10% 20%, rgba(56,189,248,0.05) 0%, transparent 60%), radial-gradient(ellipse 60% 80% at 90% 80%, rgba(56,189,248,0.03) 0%, transparent 60%); pointer-events: none; z-index: 0; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 5vw; height: 64px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid transparent; transition: background 0.4s ease, border-color 0.4s ease; }
+    nav.scrolled { background: rgba(8,13,20,0.9); backdrop-filter: blur(16px); border-color: var(--border); }
+    .nav-logo { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text2); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta { font-size: 13px; font-weight: 500; color: var(--bg); background: var(--teal); padding: 8px 20px; border-radius: 4px; text-decoration: none; letter-spacing: 0.04em; transition: opacity 0.2s, transform 0.2s; }
+    .nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { width: 24px; height: 1.5px; background: var(--text2); transition: all 0.3s; display: block; }
+
+    /* SECTION BASE */
+    section { position: relative; z-index: 1; padding: 120px 0; }
+    .section-inner { max-width: 1280px; margin: 0 auto; padding: 0 5vw; }
+    .section-label { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; }
+    .section-label::before { content: ''; width: 24px; height: 1px; background: var(--teal); }
+    h2 { font-family: var(--font-display); font-size: clamp(36px, 4.5vw, 56px); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; color: var(--text); margin-bottom: 16px; }
+
+    /* REVEAL */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* TAGS */
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { font-size: 11px; font-family: var(--font-mono); color: var(--text3); border: 1px solid var(--border); padding: 4px 10px; border-radius: 2px; letter-spacing: 0.06em; display: inline-flex; align-items: center; gap: 6px; }
+    .tag img { width: 14px; height: 14px; object-fit: contain; filter: brightness(0.9); }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+
+    /* BTN */
+    .btn-primary { background: var(--teal); color: var(--bg); font-family: var(--font-body); font-size: 14px; font-weight: 500; padding: 14px 32px; border-radius: 4px; text-decoration: none; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; letter-spacing: 0.02em; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px var(--teal-glow); }
+    .btn-outline { background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; font-weight: 400; padding: 13px 28px; border-radius: 4px; text-decoration: none; border: 1px solid var(--border2); cursor: pointer; transition: border-color 0.2s, color 0.2s; letter-spacing: 0.02em; }
+    .btn-outline:hover { border-color: var(--teal-border); color: var(--teal); }
+
+    /* ─── HERO ─── */
+    #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 120px 5vw 80px; position: relative; z-index: 1; gap: 60px; isolation: isolate; }
+    #hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,13,20,0.95) 0%, rgba(8,13,20,0.78) 45%, rgba(8,13,20,0.88) 100%), url('assets/images/hero-skyline.jpg') center/cover no-repeat; opacity: 0.34; z-index: -1; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); border: 1px solid var(--teal-border); padding: 6px 14px; border-radius: 2px; margin-bottom: 32px; opacity: 0; animation: fadeUp 0.6s ease 0.2s forwards; }
+    .hero-tag::before { content: ''; width: 6px; height: 6px; background: var(--teal); border-radius: 50%; animation: pulse 2s infinite; }
+    h1 { font-family: var(--font-display); font-size: clamp(52px, 7vw, 88px); font-weight: 800; line-height: 0.95; letter-spacing: -0.03em; color: var(--text); margin-bottom: 8px; opacity: 0; animation: fadeUp 0.7s ease 0.35s forwards; }
+    h1 .teal { color: var(--teal); }
+    .hero-roles { font-family: var(--font-mono); font-size: 13px; color: var(--text3); letter-spacing: 0.06em; margin-bottom: 32px; opacity: 0; animation: fadeUp 0.7s ease 0.5s forwards; }
+    .hero-statement { font-size: clamp(16px, 1.8vw, 19px); color: var(--text2); line-height: 1.65; max-width: 540px; margin-bottom: 48px; font-weight: 300; opacity: 0; animation: fadeUp 0.7s ease 0.65s forwards; }
+    .hero-statement strong { color: var(--text); font-weight: 500; }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.7s ease 0.8s forwards; }
+
+    .hero-right { position: relative; display: flex; align-items: center; justify-content: center; opacity: 0; animation: fadeIn 1s ease 1s forwards; }
+    .float-badge { position: absolute; background: var(--bg2); border: 1px solid var(--teal-border); border-radius: 999px; padding: 8px 16px; font-size: 11px; font-family: var(--font-mono); color: var(--teal); letter-spacing: 0.08em; white-space: nowrap; animation: floatY 4s ease-in-out infinite; z-index: 2; }
+    .float-badge-1 { top: -16px; left: -20px; animation-delay: 0s; }
+    .float-badge-2 { bottom: -16px; right: -20px; animation-delay: 2s; }
+
+    .hero-card { width: 100%; max-width: 420px; background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative; overflow: hidden; }
+    .hero-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--teal), transparent); }
+    .hero-card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+    .avatar-ring { width: 72px; height: 72px; border-radius: 50%; border: 2px solid var(--teal-border); position: relative; flex-shrink: 0; overflow: hidden; background: var(--bg3); }
+    .avatar-ring img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+    .card-title { font-size: 12px; color: var(--text3); font-family: var(--font-mono); letter-spacing: 0.08em; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+    .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+    .stat-number { font-family: var(--font-display); font-size: 24px; font-weight: 800; color: var(--teal); line-height: 1; margin-bottom: 4px; }
+    .stat-label { font-size: 11px; color: var(--text3); font-family: var(--font-mono); letter-spacing: 0.08em; }
+    .cert-row { display: flex; flex-direction: column; gap: 8px; }
+    .cert-pill { display: flex; align-items: center; gap: 8px; font-size: 12px; font-family: var(--font-mono); color: var(--text2); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; }
+    .cert-pill img { width: 18px; height: 18px; object-fit: contain; flex-shrink: 0; }
+    .cert-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+    .hero-scroll { position: absolute; bottom: 48px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeIn 1s ease 1.4s forwards; }
+    .scroll-line { width: 1px; height: 48px; background: linear-gradient(180deg, var(--teal), transparent); animation: pulse 2s infinite; }
+    .hero-scroll span { font-size: 10px; font-family: var(--font-mono); color: var(--text3); letter-spacing: 0.2em; text-transform: uppercase; }
+
+    /* ─── ABOUT ─── */
+    #about { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; margin-top: 60px; align-items: start; }
+    .about-text p { font-size: 17px; color: var(--text2); line-height: 1.8; margin-bottom: 20px; font-weight: 300; }
+    .about-text strong { color: var(--text); font-weight: 500; }
+    .about-text em { color: var(--teal); font-style: normal; }
+    .philosophy-block { border-left: 2px solid var(--teal); padding: 20px 24px; background: var(--teal-dim); border-radius: 0 8px 8px 0; margin-top: 32px; font-size: 17px; color: var(--text); font-style: italic; line-height: 1.6; }
+    .pillar-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; transition: border-color 0.3s; }
+    .pillar-card:hover { border-color: var(--teal-border); }
+    .pillar-icon { font-size: 20px; color: var(--teal); display: block; margin-bottom: 12px; }
+    .pillar-card h4 { font-size: 15px; font-family: var(--font-display); font-weight: 600; margin-bottom: 8px; }
+    .pillar-card p { font-size: 13px; color: var(--text3); line-height: 1.65; margin: 0; }
+
+    /* ─── POSITIONING ─── */
+    #positioning { background: var(--bg); }
+    .positioning-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 60px; }
+    .pos-cell { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 32px; position: relative; overflow: hidden; transition: border-color 0.3s; }
+    .pos-cell:hover { border-color: var(--teal-border); }
+    .pos-number { font-family: var(--font-display); font-size: 56px; font-weight: 800; color: var(--surface2); line-height: 1; position: absolute; top: 16px; right: 20px; }
+    .pos-arrow { font-size: 24px; color: var(--teal); display: block; margin-bottom: 16px; }
+    .pos-cell h3 { font-size: 18px; margin-bottom: 12px; }
+    .pos-cell p { font-size: 14px; color: var(--text3); line-height: 1.7; }
+
+    /* ─── EXPERIENCE ─── */
+    #experience { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; }
+    .timeline { position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 0; width: 1px; background: linear-gradient(180deg, var(--teal-border), transparent); }
+    .timeline-item { padding-left: 28px; padding-bottom: 40px; position: relative; }
+    .timeline-dot { position: absolute; left: -4px; top: 8px; width: 9px; height: 9px; border-radius: 50%; background: var(--teal); border: 2px solid var(--bg2); box-shadow: 0 0 8px var(--teal-glow); }
+    .timeline-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+    .timeline-period { font-size: 10px; font-family: var(--font-mono); color: var(--teal); letter-spacing: 0.15em; text-transform: uppercase; background: var(--teal-dim); border: 1px solid var(--teal-border); padding: 3px 8px; border-radius: 2px; }
+    .timeline-org { font-size: 12px; color: var(--text3); font-family: var(--font-mono); display: flex; align-items: center; gap: 8px; }
+    .org-logo { height: 20px; width: auto; object-fit: contain; filter: brightness(0.75) saturate(0.6); transition: filter 0.3s; vertical-align: middle; }
+    .timeline-item:hover .org-logo { filter: brightness(1) saturate(1); }
+    .timeline-item h3 { font-size: 17px; margin-bottom: 8px; font-family: var(--font-display); font-weight: 600; }
+    .timeline-item p { font-size: 14px; color: var(--text3); line-height: 1.7; margin-bottom: 12px; }
+
+    /* ─── PROJECTS ─── */
+    #projects { background: var(--bg); }
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 60px; }
+    .project-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 36px; transition: border-color 0.3s, transform 0.3s; display: flex; flex-direction: column; }
+    .project-card:hover { border-color: var(--teal-border); transform: translateY(-4px); }
+    .project-card.featured { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .project-visual { border-radius: 10px; background: var(--bg3); overflow: hidden; min-height: 220px; margin-bottom: 24px; position: relative; }
+    .project-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .project-visual::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,13,20,0.02), rgba(8,13,20,0.2)); pointer-events: none; }
+    .project-visual-label { position: absolute; left: 16px; bottom: 16px; z-index: 1; font-size: 10px; font-family: var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); background: rgba(8,13,20,0.78); border: 1px solid var(--teal-border); border-radius: 999px; padding: 6px 10px; backdrop-filter: blur(8px); }
+    .project-num { font-family: var(--font-mono); font-size: 11px; color: var(--text3); letter-spacing: 0.15em; margin-bottom: 16px; }
+    .project-card h3 { font-size: 22px; margin-bottom: 8px; }
+    .project-role { font-size: 12px; color: var(--teal); font-family: var(--font-mono); margin-bottom: 16px; letter-spacing: 0.08em; }
+    .project-card > p, .project-card > div > p { font-size: 14px; color: var(--text3); line-height: 1.7; flex: 1; }
+    .project-meta { margin-top: 24px; }
+    .project-meta h4 { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); margin-bottom: 8px; font-family: var(--font-mono); }
+    .impact-bar { background: var(--surface); border-radius: 3px; height: 3px; margin-bottom: 6px; overflow: hidden; }
+    .impact-fill { height: 100%; background: linear-gradient(90deg, var(--teal), rgba(56,189,248,0.4)); border-radius: 3px; }
+    .projects-more { text-align: center; margin-top: 48px; }
+    .projects-more a { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 13px; color: var(--teal); text-decoration: none; border: 1px solid var(--teal-border); padding: 14px 28px; border-radius: 4px; transition: background 0.2s; letter-spacing: 0.08em; }
+    .projects-more a:hover { background: var(--teal-dim); }
+
+    /* ─── CONSULTING ─── */
+    #consulting { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .consulting-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 60px; }
+    .consult-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 32px; transition: border-color 0.3s, background 0.3s; }
+    .consult-card:hover { border-color: var(--teal-border); background: var(--bg3); }
+    .consult-num { font-family: var(--font-mono); font-size: 36px; font-weight: 700; color: var(--surface2); line-height: 1; margin-bottom: 16px; }
+    .consult-card h3 { font-size: 18px; margin-bottom: 12px; }
+    .consult-card ul { list-style: none; padding: 0; }
+    .consult-card ul li { font-size: 14px; color: var(--text3); padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 10px; }
+    .consult-card ul li::before { content: '→'; color: var(--teal); flex-shrink: 0; font-size: 12px; margin-top: 2px; }
+    .consult-card ul li:last-child { border-bottom: none; }
+
+    /* ─── SKILLS ─── */
+    #skills { background: var(--bg); }
+    .skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 60px; }
+    .skill-group { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 28px; transition: border-color 0.3s; }
+    .skill-group:hover { border-color: var(--teal-border); }
+    .skill-group-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .skill-item { margin-bottom: 14px; }
+    .skill-name-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .skill-name { font-size: 13px; color: var(--text2); display: flex; align-items: center; gap: 7px; }
+    .skill-name img { width: 16px; height: 16px; object-fit: contain; filter: brightness(0.8); }
+    .skill-level { font-size: 11px; font-family: var(--font-mono); color: var(--teal); }
+    .skill-bar { height: 2px; background: var(--surface2); border-radius: 1px; overflow: hidden; }
+    .skill-fill { height: 100%; background: linear-gradient(90deg, var(--teal), rgba(56,189,248,0.5)); border-radius: 1px; width: 0; transition: width 1s ease; }
+
+    /* ─── CERTIFICATIONS ─── */
+    #certifications { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .certs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 60px; }
+    .cert-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 32px; text-align: center; transition: border-color 0.3s, transform 0.3s; }
+    .cert-card:hover { border-color: var(--teal-border); transform: translateY(-4px); }
+    .cert-logo-wrap { height: 64px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .cert-logo-wrap img { max-height: 52px; max-width: 140px; object-fit: contain; filter: brightness(0.85) saturate(0.7); transition: filter 0.3s; }
+    .cert-card:hover .cert-logo-wrap img { filter: brightness(1) saturate(1); }
+    .cert-logo-fallback { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; border: 1px solid var(--teal-border); background: var(--teal-dim); color: var(--teal); font-family: var(--font-display); font-weight: 800; font-size: 18px; }
+    .cert-card h3 { font-size: 16px; margin-bottom: 8px; }
+    .cert-card p { font-size: 13px; color: var(--text3); line-height: 1.5; }
+    .cert-badge { display: inline-block; margin-top: 16px; font-size: 10px; font-family: var(--font-mono); color: var(--teal); border: 1px solid var(--teal-border); padding: 4px 10px; border-radius: 2px; letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* ─── HIGHLIGHTS ─── */
+    #highlights { background: var(--bg); }
+    .highlights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; }
+    .highlight-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 32px; display: flex; gap: 20px; align-items: flex-start; transition: border-color 0.3s; }
+    .highlight-card:hover { border-color: var(--teal-border); }
+    .highlight-icon-wrap { width: 48px; height: 48px; background: var(--teal-dim); border: 1px solid var(--teal-border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .highlight-card h3 { font-size: 16px; margin-bottom: 8px; }
+    .highlight-card p { font-size: 14px; color: var(--text3); line-height: 1.6; margin: 0; }
+    .highlight-year { font-family: var(--font-mono); font-size: 11px; color: var(--teal); margin-bottom: 6px; }
+
+    /* ─── INSIGHTS ─── */
+    #insights { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .insights-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 60px; }
+    .insight-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: border-color 0.3s, transform 0.3s; display: flex; flex-direction: column; }
+    .insight-card:hover { border-color: var(--teal-border); transform: translateY(-4px); }
+    .insight-header { padding: 28px 28px 0; }
+    .insight-category { font-size: 10px; font-family: var(--font-mono); color: var(--teal); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px; }
+    .insight-card h3 { font-size: 18px; line-height: 1.3; margin-bottom: 12px; }
+    .insight-teaser { font-size: 14px; color: var(--text3); line-height: 1.65; padding: 0 28px 20px; flex: 1; }
+    .insight-footer { padding: 16px 28px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .insight-meta { font-size: 12px; color: var(--text3); font-family: var(--font-mono); }
+    .read-more { font-size: 13px; color: var(--teal); text-decoration: none; font-family: var(--font-mono); letter-spacing: 0.05em; transition: opacity 0.2s; }
+    .read-more:hover { opacity: 0.7; }
+    .insights-more { text-align: center; margin-top: 40px; }
+    .insights-more a { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 13px; color: var(--teal); text-decoration: none; border: 1px solid var(--teal-border); padding: 14px 28px; border-radius: 4px; transition: background 0.2s; letter-spacing: 0.08em; }
+    .insights-more a:hover { background: var(--teal-dim); }
+
+    /* ─── ARTICLE MODAL ─── */
+    .article-overlay { position: fixed; inset: 0; background: rgba(8,13,20,0.96); z-index: 200; display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 60px 20px; backdrop-filter: blur(8px); }
+    .article-overlay.open { display: flex; }
+    .article-modal { width: 100%; max-width: 760px; background: var(--bg2); border: 1px solid var(--border2); border-radius: 16px; padding: 60px; position: relative; }
+    .article-close { position: absolute; top: 24px; right: 24px; background: var(--surface); border: 1px solid var(--border); color: var(--text2); font-size: 20px; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: border-color 0.2s, color 0.2s; }
+    .article-close:hover { border-color: var(--teal-border); color: var(--teal); }
+    .article-modal .insight-category { font-size: 11px; margin-bottom: 16px; }
+    .article-modal h2 { font-size: clamp(24px, 3vw, 36px); margin-bottom: 24px; }
+    .article-body { font-size: 16px; color: var(--text2); line-height: 1.85; }
+    .article-body p { margin-bottom: 20px; }
+    .article-body h3 { font-size: 20px; color: var(--text); margin: 36px 0 12px; }
+    .article-body h4 { font-size: 16px; color: var(--teal); margin: 24px 0 8px; font-family: var(--font-mono); letter-spacing: 0.05em; }
+    .article-body ul { padding-left: 20px; margin-bottom: 20px; }
+    .article-body ul li { margin-bottom: 8px; }
+    .article-body blockquote { border-left: 2px solid var(--teal); padding: 16px 24px; background: var(--teal-dim); border-radius: 0 8px 8px 0; margin: 24px 0; font-style: italic; color: var(--text); }
+
+    /* ─── VIDEO ─── */
+    #videos { background: var(--bg); }
+    .videos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; }
+    .video-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: border-color 0.3s; }
+    .video-card:hover { border-color: var(--teal-border); }
+    .video-thumb { width: 100%; aspect-ratio: 16/9; background: var(--bg3); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .video-thumb::before { content: ''; position: absolute; inset: 0; background: center/cover no-repeat; opacity: 0.52; transform: scale(1.02); }
+    .video-thumb.thumb-speaking::before { background-image: url('assets/images/video-speaking.jpg'); }
+    .video-thumb.thumb-reflex::before { background-image: url('assets/images/video-reflex.png'); }
+    .video-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; width: 100%; height: 100%; cursor: pointer; position: relative; z-index: 1; background: linear-gradient(180deg, rgba(8,13,20,0.18), rgba(8,13,20,0.72)); }
+    .play-btn { width: 60px; height: 60px; background: var(--teal-dim); border: 2px solid var(--teal-border); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s; }
+    .video-placeholder:hover .play-btn { background: var(--teal); transform: scale(1.08); }
+    .play-icon { width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 18px solid var(--teal); margin-left: 4px; transition: border-left-color 0.3s; }
+    .video-placeholder:hover .play-icon { border-left-color: var(--bg); }
+    .video-thumb-label { font-size: 13px; color: var(--text3); font-family: var(--font-mono); letter-spacing: 0.08em; }
+    .video-info { padding: 20px 24px; }
+    .video-info h3 { font-size: 16px; margin-bottom: 6px; }
+    .video-info p { font-size: 13px; color: var(--text3); }
+
+    /* ─── GITHUB ─── */
+    #github { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .github-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px; }
+    .github-main { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 32px; }
+    .github-repos { display: flex; flex-direction: column; gap: 12px; }
+    .repo-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
+    .repo-card:hover { border-color: var(--teal-border); background: var(--teal-dim); }
+    .repo-name { font-family: var(--font-mono); font-size: 14px; color: var(--teal); }
+    .repo-desc { font-size: 12px; color: var(--text3); margin-top: 3px; }
+    .repo-arrow { color: var(--text3); font-size: 16px; transition: transform 0.2s, color 0.2s; }
+    .repo-card:hover .repo-arrow { transform: translateX(4px); color: var(--teal); }
+    .okaudit-featured { background: var(--bg); border: 1px solid var(--teal-border); border-radius: 12px; padding: 32px; position: relative; overflow: hidden; }
+    .okaudit-featured::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--teal), transparent); }
+    .okaudit-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--teal-dim); border: 1px solid var(--teal-border); color: var(--teal); font-size: 10px; font-family: var(--font-mono); letter-spacing: 0.1em; padding: 4px 10px; border-radius: 2px; margin-bottom: 16px; text-transform: uppercase; }
+    .okaudit-badge img { height: 14px; width: auto; object-fit: contain; }
+    .okaudit-featured h3 { font-size: 22px; margin-bottom: 12px; }
+    .okaudit-featured p { font-size: 14px; color: var(--text3); line-height: 1.7; margin-bottom: 20px; }
+    .okaudit-featured a { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--teal); text-decoration: none; font-family: var(--font-mono); border: 1px solid var(--teal-border); padding: 10px 18px; border-radius: 4px; transition: background 0.2s; }
+    .okaudit-featured a:hover { background: var(--teal-dim); }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--bg); }
+    .contact-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+    .contact-inner > p { font-size: 18px; color: var(--text2); margin-bottom: 48px; font-weight: 300; }
+    .contact-form { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 48px; text-align: left; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+    .form-group label { font-size: 12px; color: var(--text3); font-family: var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; }
+    .form-group input, .form-group select, .form-group textarea { background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; color: var(--text); font-family: var(--font-body); font-size: 14px; transition: border-color 0.2s; outline: none; width: 100%; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--teal-border); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group select option { background: var(--bg2); }
+    .form-submit { width: 100%; }
+    .form-status { text-align: center; margin-top: 12px; font-size: 14px; color: var(--teal); display: none; }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 48px 5vw; position: relative; z-index: 1; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+    .footer-logo { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--text); letter-spacing: -0.02em; }
+    .footer-logo span { color: var(--teal); }
+    .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+    .footer-links a { font-size: 13px; color: var(--text3); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-social { display: flex; gap: 16px; }
+    .footer-social a { width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: border-color 0.2s; text-decoration: none; }
+    .footer-social a:hover { border-color: var(--teal-border); }
+    .footer-social img { width: 16px; height: 16px; object-fit: contain; filter: brightness(0.6); transition: filter 0.2s; }
+    .footer-social a:hover img { filter: brightness(1); }
+    .footer-copy { font-size: 12px; color: var(--text3); font-family: var(--font-mono); width: 100%; text-align: center; padding-top: 32px; border-top: 1px solid var(--border); margin-top: 24px; }
+
+    /* ─── MOBILE ─── */
+    .mobile-menu { position: fixed; inset: 0; background: var(--bg); z-index: 99; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--text2); text-decoration: none; transition: color 0.2s; }
+    .mobile-menu a:hover { color: var(--teal); }
+
+    @media (max-width: 900px) {
+      #hero { grid-template-columns: 1fr; padding: 100px 5vw 80px; }
+      .hero-right { display: none; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .positioning-grid { grid-template-columns: 1fr; }
+      .exp-grid { grid-template-columns: 1fr; gap: 40px; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+      .consulting-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .certs-grid { grid-template-columns: 1fr; }
+      .highlights-grid { grid-template-columns: 1fr; }
+      .insights-grid { grid-template-columns: 1fr; }
+      .videos-grid { grid-template-columns: 1fr; }
+      .github-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .article-modal { padding: 36px 24px; }
+    }
+    @media (max-width: 600px) {
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="projects.html" onclick="closeMobile()">All Projects</a>
+  <a href="blog.html" onclick="closeMobile()">Blog</a>
+  <a href="#insights" onclick="closeMobile()">Insights</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
 </div>
-<!--<div>
-    <a href="http://www.reliablecounter.com" target="_blank"><img src="https://www.reliablecounter.com/count.php?page=maxwellokumu.github.io5272458&digit=style/plain/1/&reloads=0" alt="guest counter" title="guest counter" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">guest counter</a><br>
-    
-</div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
+<nav id="mainNav" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" aria-label="Maxwell Okumu home">M<span>.</span>Okumu</a>
+  <ul class="nav-links" role="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#positioning">Positioning</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="projects.html">All Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#github">Open Source</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get in Touch</a>
+  <button class="hamburger" id="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero section">
+  <div class="hero-left">
+    <div class="hero-tag">Nairobi, Kenya · Available for Consulting</div>
+    <h1>Maxwell<br/><span class="teal">Okumu</span></h1>
+    <p class="hero-roles">Systems Architect · IT Consultant · Agentic AI Engineer · Lecturer</p>
+    <p class="hero-statement">
+      I design, audit, and engineer <strong>intelligent systems</strong> that power institutions — from <strong>secure data infrastructures</strong> to <strong>autonomous AI-driven platforms</strong>. Where strategy meets architecture.
+    </p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View Work</a>
+      <a href="projects.html" class="btn-outline">All Projects</a>
+      <a href="blog.html" class="btn-outline">Blog & Insights</a>
+    </div>
+  </div>
+
+  <div class="hero-right" aria-hidden="true">
+    <div class="float-badge float-badge-1">⬡ OkAudit · Published to Claude Skills</div>
+    <div class="hero-card">
+      <div class="hero-card-header">
+        <div class="avatar-ring">
+          <!-- Rename your DaveCircle.png to avatar.png and place in assets/images/ -->
+          <img src="assets/images/avatar.png" alt="Portrait of Maxwell Okumu" loading="lazy"/>
+        </div>
+        <div>
+          <div class="card-name">Maxwell Okumu</div>
+          <div class="card-title">MSc · JKUAT · Trendsetters Inc</div>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-box"><div class="stat-number">10K+</div><div class="stat-label">Alumni Served</div></div>
+        <div class="stat-box"><div class="stat-number">3</div><div class="stat-label">Gov. Engagements</div></div>
+        <div class="stat-box"><div class="stat-number">8+</div><div class="stat-label">Years Experience</div></div>
+        <div class="stat-box"><div class="stat-number">5</div><div class="stat-label">Active Roles</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-pill">
+          <img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="Cisco" loading="lazy"/>
+          CCNA · Cisco Certified
+        </div>
+        <div class="cert-pill">
+<img src="assets/images/logo-ibm.svg" alt="IBM" loading="lazy"/>
+          IBM Blockchain Mastery
+        </div>
+        <div class="cert-pill">
+          <!-- Zscaler wordmark via Simple Icons -->
+<img src="assets/images/logo-zscaler.png" alt="Zscaler" loading="lazy"/>
+          Zscaler ZTCA · Zero Trust
+        </div>
+      </div>
+    </div>
+    <div class="float-badge float-badge-2">▲ JKUAT Alumni System · Live</div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About Maxwell Okumu">
+  <div class="section-inner">
+    <div class="section-label reveal">About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="reveal">The Architect<br/>Behind the System</h2>
+        <p class="reveal reveal-delay-1">Maxwell Okumu holds an <strong>MSc in Software Engineering</strong> and currently serves as a <strong>Lecturer in the Department of Computing at JKUAT</strong> — one of Kenya's foremost technical universities. But credentials alone do not define him. What defines him is the rare ability to think in systems.</p>
+        <p class="reveal reveal-delay-1">Most technologists build features. Maxwell builds <em>architectures</em> — the structural frameworks that determine how data flows, how institutions function, and how organisations scale without breaking. He has done this for government bodies, private institutions, and national-level digital ecosystems.</p>
+        <p class="reveal reveal-delay-2">His career has been one of deliberate convergence: <strong>software engineering</strong> anchored in real systems, <strong>IT governance</strong> informed by audit rigour, <strong>AI engineering</strong> grounded in practical deployment, and <strong>education</strong> treated as a design problem.</p>
+        <p class="reveal reveal-delay-2">He chose this path because he observed, early in his career, a recurring failure in Kenyan institutions: technically capable teams building systems that didn't survive contact with reality — not because of poor code, but because of absent architecture. Maxwell fills that gap.</p>
+        <div class="philosophy-block reveal reveal-delay-3">
+          <p>"Passion without architecture is noise. I don't deliver features — I deliver systems that outlive the project brief."</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="pillar-card reveal reveal-delay-1">
+          <span class="pillar-icon">⬡</span>
+          <h4>Product-Led Pedagogy</h4>
+          <p>Maxwell develops interactive lab artifacts — HTML/CSS/JS-based learning systems — that treat education as a software product. Students don't just read about full-stack systems; they build them inside purpose-engineered environments.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-2">
+          <span class="pillar-icon">⚙</span>
+          <h4>Engineering-First Philosophy</h4>
+          <p>He prioritises efficiency, maintainability, and system-level thinking over superficial feature velocity. Every engagement begins with a diagnosis — not a proposal.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-3">
+          <span class="pillar-icon">◈</span>
+          <h4>Institutional Intelligence</h4>
+          <p>Having worked inside KRA, ICT Authority of Kenya, and JKUAT, Maxwell understands how institutions actually function — and where their systems quietly fail. He designs from the inside out.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-4">
+          <span class="pillar-icon">✦</span>
+          <h4>Agentic AI at the Edge</h4>
+          <p>Maxwell is actively engineering autonomous AI frameworks — implementing, troubleshooting, and extending LLM-based pipelines in local and cloud environments, with a focus on institutional application.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POSITIONING -->
+<section id="positioning" aria-label="Executive positioning">
+  <div class="section-inner">
+    <div class="section-label reveal">Positioning</div>
+    <h2 class="reveal">Not Just Technical.<br/>Structurally Different.</h2>
+    <p class="reveal" style="font-size:17px;color:var(--text2);max-width:680px;margin-top:16px;font-weight:300;">Maxwell operates at the level of a management consultant with deep technical execution capability. Unlike traditional consultants, he does not stop at recommendations — he architects and builds the solutions.</p>
+    <div class="positioning-grid reveal reveal-delay-1">
+      <div class="pos-cell">
+        <div class="pos-number">01</div>
+        <span class="pos-arrow">↗</span>
+        <h3>Strategy + Implementation</h3>
+        <p>He understands both the boardroom brief and the database schema. Institutions get a single trusted advisor who can translate vision into working architecture without the telephone-game loss of meaning.</p>
+      </div>
+      <div class="pos-cell">
+        <div class="pos-number">02</div>
+        <span class="pos-arrow">↗</span>
+        <h3>Cross-Functional Authority</h3>
+        <p>From business systems analysis at Kenya Revenue Authority to national ICT project analysis at the ICT Authority of Kenya — Maxwell has navigated high-stakes institutional environments across sectors.</p>
+      </div>
+      <div class="pos-cell">
+        <div class="pos-number">03</div>
+        <span class="pos-arrow">↗</span>
+        <h3>AI-Native Systems Thinker</h3>
+        <p>As agentic AI reshapes what software can do autonomously, Maxwell is already engineering these systems — not theorising about them. He builds the pipelines, manages the runtimes, and ships the infrastructure.</p>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2" style="margin-top:48px;border:1px solid var(--teal-border);border-radius:12px;padding:40px;background:var(--teal-dim);max-width:760px;">
+      <p style="font-size:19px;color:var(--text);line-height:1.7;font-style:italic;margin-bottom:20px;">"Maxwell doesn't just consult — he diagnoses. Within a week he had mapped gaps in our systems that had existed for years unnoticed. He delivered not a report, but a roadmap with working architecture attached."</p>
+      <div style="font-size:13px;color:var(--teal);font-family:var(--font-mono);">—Dennis Mboya- CEO, Mhasibu Housing Company, Kenya</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" aria-label="Professional experience">
+  <div class="section-inner">
+    <div class="section-label reveal">Experience</div>
+    <h2 class="reveal">Built in High-Stakes<br/>Environments</h2>
+    <div class="exp-grid">
+      <div class="timeline reveal reveal-delay-1">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-period">Current</span>
+            <span class="timeline-org">
+              <!-- JKUAT Logo — replace with actual logo file when available -->
+              <img src="assets/images/logo-jkuat.png" alt="JKUAT" class="org-logo" loading="lazy" onerror="this.style.display='none'"/>
+              JKUAT
+            </span>
+          </div>
+          <h3>Lecturer — Department of Computing</h3>
+          <p>Designing and delivering full-stack engineering curricula at one of Kenya's foremost technical universities. Treats education as a product — building interactive lab artifacts and immersive learning systems to bridge theory and production-grade practice.</p>
+          <div class="tag-row">
+            <span class="tag">Curriculum Design</span>
+            <span class="tag">Full-Stack Systems</span>
+            <span class="tag">Product-Led Pedagogy</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-period">Past</span>
+            <span class="timeline-org">
+<img src="assets/images/logo-kiriri.svg" alt="Kiriri Women's University" class="org-logo" loading="lazy" onerror="this.style.display='none'"/>
+              Kiriri Women's University
+            </span>
+          </div>
+          <h3>Lecturer — Computing</h3>
+          <p>Delivered computing and systems courses, applying engineering-first methodologies in an academic environment. Continued refinement of pedagogy as a design discipline.</p>
+          <div class="tag-row">
+            <span class="tag">Systems Design</span>
+            <span class="tag">Software Engineering</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-period">Active</span>
+            <span class="timeline-org">
+              <img src="assets/images/logo-trendsetters.png" alt="Trendsetters Inc" class="org-logo" loading="lazy" onerror="this.style.display='none'"/>
+              Trendsetters Inc
+            </span>
+          </div>
+          <h3>Founder & Systems Lead</h3>
+          <p>Built and continues to lead a digital media and systems ecosystem that earned the Contribution to Innovation &amp; Technology Award in 2021. Trendsetters operates at the intersection of content, technology, and institutional digital services.</p>
+          <div class="tag-row">
+            <span class="tag">Founder</span>
+            <span class="tag">Digital Ecosystems</span>
+            <span class="tag">Award 2021</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline reveal reveal-delay-2">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-period">Past</span>
+            <span class="timeline-org">
+              <!-- KRA Logo via assets — place kralogo.png from old site as assets/images/logo-kra.png -->
+              <img src="assets/images/logo-kra.png" alt="Kenya Revenue Authority" class="org-logo" loading="lazy" onerror="this.style.display='none'"/>
+              Kenya Revenue Authority
+            </span>
+          </div>
+          <h3>Business Systems Analyst</h3>
+          <p>Operated at the intersection of business processes and technical system implementation within Kenya's primary tax authority. Translated complex institutional requirements into structured system specifications — a role demanding both political fluency and technical precision.</p>
+          <div class="tag-row">
+            <span class="tag">Business Analysis</span>
+            <span class="tag">System Specifications</span>
+            <span class="tag">Government ICT</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-period">Past</span>
+            <span class="timeline-org">
+              <img src="assets/images/logo-icta.png" alt="ICT Authority of Kenya" class="org-logo" loading="lazy" onerror="this.style.display='none'"/>
+              ICT Authority of Kenya
+            </span>
+          </div>
+          <h3>Technical Project Analyst</h3>
+          <p>Supported national-level ICT initiatives at Kenya's apex ICT coordination body. Contributed to system coordination across government digital infrastructure.</p>
+          <div class="tag-row">
+            <span class="tag">National ICT Policy</span>
+            <span class="tag">Project Coordination</span>
+            <span class="tag">Digital Government</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-meta">
+            <span class="timeline-period">Active</span>
+            <span class="timeline-org">
+              <img src="assets/images/logo-reflex.png" alt="Reflex Concepts" class="org-logo" loading="lazy" onerror="this.style.display='none'"/>
+              Reflex Concepts
+            </span>
+          </div>
+          <h3>Senior Software Engineer</h3>
+          <p>Led development of scalable software solutions in a fast-moving engineering environment. Established engineering standards and drove delivery across complex, multi-layered system builds.</p>
+          <div class="tag-row">
+            <span class="tag">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>
+              PHP / Laravel
+            </span>
+            <span class="tag">System Architecture</span>
+            <span class="tag">Engineering Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS (Featured — top 4 only, link to all) -->
+<section id="projects" aria-label="Flagship projects">
+  <div class="section-inner">
+    <div class="section-label reveal">Projects</div>
+    <h2 class="reveal">Systems That Outlive<br/>the Project Brief</h2>
+    <div class="projects-grid">
+
+      <!-- FEATURED -->
+      <div class="project-card featured reveal reveal-delay-1">
+        <div>
+          <div class="project-num">FLAGSHIP · 001</div>
+          <h3>AI-Assisted Academic Evaluation System</h3>
+          <p class="project-role">Lead Systems Architect</p>
+          <p>A multi-pass evaluation pipeline that ingests student submissions, parses unstructured PDFs into structured data, and maps content against a 20-mark rubric using LLM evaluation. Built to address evaluator bias in academic systems — not merely to automate grading, but to enable algorithmic fairness at scale.</p>
+          <div class="project-meta">
+            <h4>Architecture</h4>
+            <div style="font-size:13px;color:var(--text3);line-height:1.8;">PDF extraction → structured transformation → rubric mapping → multi-pass bias mitigation → evaluator report generation</div>
+          </div>
+          <div class="tag-row" style="margin-top:20px;">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"/>Python</span>
+            <span class="tag">LLM Pipelines</span>
+            <span class="tag">PDF Parsing</span>
+            <span class="tag">Algorithmic Fairness</span>
+          </div>
+        </div>
+        <div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:28px;height:100%;display:flex;flex-direction:column;gap:20px;">
+            <div style="font-size:12px;font-family:var(--font-mono);color:var(--teal);letter-spacing:0.1em;">SYSTEM IMPACT</div>
+            <div>
+              <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">Evaluation Speed</div>
+              <div class="impact-bar"><div class="impact-fill" style="width:92%"></div></div>
+              <div style="font-size:11px;font-family:var(--font-mono);color:var(--teal);margin-top:4px;">92% faster than manual review</div>
+            </div>
+            <div>
+              <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">Bias Reduction</div>
+              <div class="impact-bar"><div class="impact-fill" style="width:78%"></div></div>
+              <div style="font-size:11px;font-family:var(--font-mono);color:var(--teal);margin-top:4px;">Multi-pass mitigation protocol</div>
+            </div>
+            <div>
+              <div style="font-size:13px;color:var(--text3);margin-bottom:8px;">Scalability</div>
+              <div class="impact-bar"><div class="impact-fill" style="width:100%"></div></div>
+              <div style="font-size:11px;font-family:var(--font-mono);color:var(--teal);margin-top:4px;">Institutional-scale deployment ready</div>
+            </div>
+            <div style="margin-top:auto;background:var(--teal-dim);border:1px solid var(--teal-border);border-radius:8px;padding:16px;">
+              <div style="font-size:12px;color:var(--teal);font-family:var(--font-mono);margin-bottom:6px;">STRATEGIC VALUE</div>
+              <p style="font-size:13px;color:var(--text2);margin:0;line-height:1.6;">Moves beyond automation — enables algorithmic fairness and positions institutions to audit evaluation quality, not just outcome.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 002 -->
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-visual">
+          <img src="assets/images/project-jkusaonline.png" alt="JKUAT Alumni Online Portal" loading="lazy" width="600" height="220"/>
+          <div class="project-visual-label">Production Portal</div>
+        </div>
+        <div class="project-num">002</div>
+        <h3>JKUAT Alumni Online Portal</h3>
+        <p class="project-role">Lead Systems Architect · Commissioned</p>
+        <p>A commissioned, production-grade institutional portal serving thousands of JKUAT alumni across Kenya and the diaspora. Multi-module architecture encompassing CMS, role-based access, club management, leagues, and alumni directory.</p>
+        <div class="project-meta" style="margin-top:auto;">
+          <div class="tag-row" style="margin-top:20px;">
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP / Laravel</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>SQL</span>
+            <span class="tag">Role-Based Access</span>
+            <span class="tag">CMS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 003 -->
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-visual">
+          <img src="assets/images/project-league.png" alt="QR-Based Attendance System" loading="lazy" width="600" height="220"/>
+          <div class="project-visual-label">Secure Attendance</div>
+        </div>
+        <div class="project-num">003</div>
+        <h3>QR-Based Attendance System</h3>
+        <p class="project-role">Systems Architect</p>
+        <p>Designed a secure, QR-driven attendance infrastructure as a privacy-respecting alternative to biometric systems. Explored blockchain-based tamper-proofing for audit trails, addressing both security and data privacy concerns in institutional settings.</p>
+        <div class="project-meta" style="margin-top:auto;">
+          <div class="tag-row" style="margin-top:20px;">
+            <span class="tag">QR Infrastructure</span>
+            <span class="tag">Blockchain</span>
+            <span class="tag"><img src="assets/images/logo-ibm.svg" alt="IBM"/>IBM Certified</span>
+            <span class="tag">Data Privacy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 004 -->
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-visual">
+          <img src="assets/images/project-tsblog.png" alt="Trendsetter Blog CMS" loading="lazy" width="600" height="220"/>
+          <div class="project-visual-label">SEO-Ready CMS</div>
+        </div>
+        <div class="project-num">004</div>
+        <h3>Trendsetter Blog CMS</h3>
+        <p class="project-role">Architect & Engineer</p>
+        <p>Custom-built content management system for Trendsetters Inc with SEO optimisation baked into the architecture — structured data schemas, canonical URL management, meta automation, and editorial workflow. A production system, not a WordPress theme.</p>
+        <div class="project-meta" style="margin-top:auto;">
+          <div class="tag-row" style="margin-top:20px;">
+            <span class="tag">CMS Architecture</span>
+            <span class="tag">SEO Systems</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP</span>
+            <span class="tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>JS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="projects-more reveal">
+      <a href="projects.html">View All Projects — Including Commercial & Research Work ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTING -->
+<section id="consulting" aria-label="Consulting experience">
+  <div class="section-inner">
+    <div class="section-label reveal">Consulting</div>
+    <h2 class="reveal">Where Institutions<br/>Hire Maxwell</h2>
+    <div class="consulting-grid">
+      <div class="consult-card reveal reveal-delay-1">
+        <div class="consult-num">01</div>
+        <h3>IT Audit & Compliance</h3>
+        <ul>
+          <li>Evaluated data privacy frameworks and security posture against compliance standards</li>
+          <li>Identified systemic vulnerabilities and structural compliance gaps</li>
+          <li>Delivered actionable remediation architecture — not just a risk register</li>
+          <li>Conducted full audit for a leading housing company in Kenya</li>
+        </ul>
+      </div>
+      <div class="consult-card reveal reveal-delay-2">
+        <div class="consult-num">02</div>
+        <h3>Institutional Data Infrastructure</h3>
+        <ul>
+          <li>Architected relational database systems for the JKUAT alumni ecosystem</li>
+          <li>Designed scalable SQL schemas for long-term institutional growth</li>
+          <li>Managed migration of legacy institutional records with zero data loss</li>
+          <li>Ensured query performance and data integrity at production scale</li>
+        </ul>
+      </div>
+      <div class="consult-card reveal reveal-delay-3">
+        <div class="consult-num">03</div>
+        <h3>Socio-Political Data Research</h3>
+        <ul>
+          <li>Lead Investigator for structured survey across Mathioya Constituency</li>
+          <li>Designed data collection methodology spanning 3 wards</li>
+          <li>Linked economic activity mapping to constituent needs analysis</li>
+          <li>Produced decision-grade insights for policy stakeholders</li>
+        </ul>
+      </div>
+      <div class="consult-card reveal reveal-delay-4">
+        <div class="consult-num">04</div>
+        <h3>Agentic AI Systems Engineering</h3>
+        <ul>
+          <li>Implemented and extended the OpenClaw agentic framework</li>
+          <li>Designed local environments for autonomous AI system deployment</li>
+          <li>Managed runtime transitions and Node.js version compatibility</li>
+          <li>Built LLM-based automation pipelines for institutional workflows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-label="Skills and expertise">
+  <div class="section-inner">
+    <div class="section-label reveal">Skills</div>
+    <h2 class="reveal">The Technical Stack<br/>Behind the Thinking</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-title">Systems Architecture</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Scalable System Design</span><span class="skill-level">Expert</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Relational Database Architecture</span><span class="skill-level">Expert</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">IT Audit & Governance</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name">
+<img src="assets/images/logo-zscaler.png" alt="Zscaler"/>
+              Zero Trust Architecture
+            </span>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-title">Software Engineering</div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"/>PHP & Laravel</span>
+            <span class="skill-level">Expert</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="94"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"/>SQL & Database Design</span>
+            <span class="skill-level">Expert</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>JavaScript / Node.js</span>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"/>Python</span>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-3">
+        <div class="skill-group-title">AI & Agentic Systems</div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">LLM Pipeline Engineering</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="86"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name"><img src="https://cdn.simpleicons.org/anthropic/000000" alt="Anthropic" style="filter:invert(1) brightness(0.7)"/>Claude / Anthropic API</span>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row"><span class="skill-name">Agentic Framework Design</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name-row">
+            <span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash"/>Bash & DevOps</span>
+            <span class="skill-level">Proficient</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="76"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" aria-label="Certifications and credentials">
+  <div class="section-inner">
+    <div class="section-label reveal">Credentials</div>
+    <h2 class="reveal">Verified. Certified.<br/>Battle-Tested.</h2>
+    <div class="certs-grid">
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-logo-wrap">
+          <img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="Cisco" loading="lazy"/>
+        </div>
+        <h3>Cisco CCNA 1–4</h3>
+        <p>Comprehensive networking and infrastructure certification. Strong foundation in routing, switching, and network security — the backbone of any scalable institutional architecture.</p>
+        <span class="cert-badge">Cisco Certified</span>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-logo-wrap">
+<img src="assets/images/logo-ibm.svg" alt="IBM" loading="lazy"/>
+        </div>
+        <h3>IBM Blockchain Mastery</h3>
+        <p>Advanced certification in decentralised systems and blockchain architecture. Applied in QR attendance systems and tamper-proof audit trail design for institutional data integrity.</p>
+        <span class="cert-badge">IBM Certified</span>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <div class="cert-logo-wrap">
+<img src="assets/images/logo-zscaler.png" alt="Zscaler" loading="lazy"/>
+        </div>
+        <h3>Zscaler ZTCA</h3>
+        <p>Zero Trust Cyber Associate certification — modern cybersecurity model expertise. Applied in IT audits and security posture evaluations for institutional clients across Kenya.</p>
+        <span class="cert-badge">Zscaler Certified</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section id="highlights" aria-label="Key achievements">
+  <div class="section-inner">
+    <div class="section-label reveal">Highlights</div>
+    <h2 class="reveal">Recognition &amp;<br/>Milestones</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card reveal reveal-delay-1">
+        <div class="highlight-icon-wrap">◆</div>
+        <div>
+          <div class="highlight-year">2021</div>
+          <h3>Contribution to Innovation & Technology Award</h3>
+          <p>Recognised for the Trendsetters Product Suite — a digital ecosystem that demonstrated how institutional systems thinking can power media and technology platforms at scale.</p>
+        </div>
+      </div>
+      <div class="highlight-card reveal reveal-delay-2">
+        <div class="highlight-icon-wrap">⬡</div>
+        <div>
+          <div class="highlight-year">Published</div>
+          <h3>OkAudit — Claude Skills Library</h3>
+          <p>Published an IT audit skill for security teams to the Anthropic Claude skills ecosystem and GitHub — contributing to the global AI tooling landscape. Available at github.com/maxwellokumu/OkAudit.</p>
+        </div>
+      </div>
+      <div class="highlight-card reveal reveal-delay-3">
+        <div class="highlight-icon-wrap">◎</div>
+        <div>
+          <div class="highlight-year">Active</div>
+          <h3>Trendsetters Inc — Founder</h3>
+          <p>Built and leads an active digital media and systems company operating at the intersection of content infrastructure, technology products, and institutional digital services in Kenya.</p>
+        </div>
+      </div>
+      <div class="highlight-card reveal reveal-delay-4">
+        <div class="highlight-icon-wrap">◈</div>
+        <div>
+          <div class="highlight-year">Lead Investigator</div>
+          <h3>Mathioya Constituency Survey</h3>
+          <p>Designed and executed a structured socio-political survey across 3 wards — mapping economic activity to constituent needs and delivering decision-grade data to policy stakeholders.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS (preview — 4 cards) -->
+<section id="insights" aria-label="Thought leadership insights">
+  <div class="section-inner">
+    <div class="section-label reveal">Insights</div>
+    <h2 class="reveal">Thinking Out Loud<br/>on Systems & AI</h2>
+    <div class="insights-grid">
+      <div class="insight-card reveal reveal-delay-1">
+        <div class="insight-header">
+          <div class="insight-category">Systems Thinking</div>
+          <h3>Why Most Institutional Systems Fail — A Systems Perspective</h3>
+        </div>
+        <p class="insight-teaser">The failure is rarely technical. It's architectural. Most institutional systems collapse not because of bad code, but because they were never designed to survive contact with the institution they were meant to serve.</p>
+        <div class="insight-footer">
+          <span class="insight-meta">8 min read</span>
+          <a href="#" class="read-more" onclick="openArticle('article1'); return false;">Read More →</a>
+        </div>
+      </div>
+      <div class="insight-card reveal reveal-delay-2">
+        <div class="insight-header">
+          <div class="insight-category">AI Engineering</div>
+          <h3>Agentic AI Systems: The Next Layer of Software Engineering</h3>
+        </div>
+        <p class="insight-teaser">We are moving from software that responds to software that acts. Agentic AI is not a feature — it is a new layer of the engineering stack. And most engineers are not yet prepared for what that means architecturally.</p>
+        <div class="insight-footer">
+          <span class="insight-meta">10 min read</span>
+          <a href="#" class="read-more" onclick="openArticle('article2'); return false;">Read More →</a>
+        </div>
+      </div>
+      <div class="insight-card reveal reveal-delay-3">
+        <div class="insight-header">
+          <div class="insight-category">EdTech</div>
+          <h3>Rethinking Academic Evaluation Through Algorithms</h3>
+        </div>
+        <p class="insight-teaser">The examination system is a black box. Students submit work; marks appear. Between those two events is a process so opaque, so variable, that it cannot be called a system in any meaningful engineering sense.</p>
+        <div class="insight-footer">
+          <span class="insight-meta">7 min read</span>
+          <a href="#" class="read-more" onclick="openArticle('article3'); return false;">Read More →</a>
+        </div>
+      </div>
+      <div class="insight-card reveal reveal-delay-4">
+        <div class="insight-header">
+          <div class="insight-category">IT Governance</div>
+          <h3>IT Audits in the Age of Data Privacy</h3>
+        </div>
+        <p class="insight-teaser">Data privacy compliance in Kenya is no longer optional — it is structural. Yet most organisations approach it as paperwork rather than architecture. An IT audit, done right, is not a checklist. It is a diagnosis.</p>
+        <div class="insight-footer">
+          <span class="insight-meta">9 min read</span>
+          <a href="#" class="read-more" onclick="openArticle('article4'); return false;">Read More →</a>
+        </div>
+      </div>
+    </div>
+    <div class="insights-more reveal">
+      <a href="blog.html">View All Posts — Native Insights & LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO HIGHLIGHTS -->
+<section id="videos" aria-label="Video highlights">
+  <div class="section-inner">
+    <div class="section-label reveal">Video</div>
+    <h2 class="reveal">Watch the Work<br/>In Motion</h2>
+    <div class="videos-grid">
+      <div class="video-card reveal reveal-delay-1">
+        <div class="video-thumb thumb-speaking">
+          <div class="video-placeholder" onclick="loadYoutube(this, 'VIDEO_ID')" role="button" aria-label="Play YouTube video: System Architecture Walkthrough">
+            <div class="play-btn"><div class="play-icon"></div></div>
+            <span class="video-thumb-label">Click to Play</span>
+          </div>
+        </div>
+        <div class="video-info">
+          <h3>System Architecture Walkthrough</h3>
+          <p>A deep-dive walkthrough of institutional system design principles and live architecture decisions.</p>
+        </div>
+      </div>
+      <div class="video-card reveal reveal-delay-2">
+        <div class="video-thumb thumb-reflex">
+          <div class="video-placeholder" onclick="loadGithubVideo(this, 'demo.mp4')" role="button" aria-label="Play project showcase video">
+            <div class="play-btn"><div class="play-icon"></div></div>
+            <span class="video-thumb-label">Click to Play</span>
+          </div>
+        </div>
+        <div class="video-info">
+          <h3>Project Showcase</h3>
+          <p>Technical walkthrough of the JKUAT Alumni Portal and AI-assisted evaluation pipeline in action.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB -->
+<section id="github" aria-label="GitHub and open source">
+  <div class="section-inner">
+    <div class="section-label reveal">Open Source</div>
+    <h2 class="reveal">Contributing to the<br/>AI Ecosystem</h2>
+    <div class="github-grid">
+      <div class="okaudit-featured reveal reveal-delay-1">
+        <div class="okaudit-badge">
+          <img src="https://cdn.simpleicons.org/anthropic/000000" alt="Anthropic" style="filter:invert(1) brightness(0.7)"/>
+          Featured · Anthropic Claude Skills
+        </div>
+        <h3>OkAudit</h3>
+        <p>A Claude skill purpose-built for IT audit and security teams — published to GitHub and contributed to the Anthropic Claude skills ecosystem. OkAudit enables AI-assisted security posture evaluation, compliance gap analysis, and audit workflow automation.</p>
+        <p style="margin-top:12px;">This is not a demo. It is a production tool for professional security teams — a signal of Maxwell's position at the frontier of AI-assisted institutional governance.</p>
+        <a href="https://github.com/maxwellokumu/OkAudit" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" style="width:16px;height:16px;"/>
+          View on GitHub ↗
         </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>This Website.</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/website.png" class="img-responsive img-centered" alt="">
-                            <p>In February 2016, I developed a portfolio website as part of my Intro to Internet Applications Programming course, which marked the strat of my web development journey. While I was already proficient in HTML and CSS, this project deepened my knowledge of JavaScript and PHP. I also integrated the Bootstrap framework to enhance the site's design. Although initially created for the class, I later decided to host it online.
-                            </p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="github-main reveal reveal-delay-2">
+        <div style="font-size:12px;font-family:var(--font-mono);color:var(--teal);letter-spacing:0.12em;margin-bottom:20px;">REPOSITORIES</div>
+        <div class="github-repos">
+          <a href="https://github.com/maxwellokumu/OkAudit" target="_blank" rel="noopener noreferrer" class="repo-card">
+            <div><div class="repo-name">OkAudit</div><div class="repo-desc">IT audit skill for Claude · Security teams</div></div>
+            <span class="repo-arrow">↗</span>
+          </a>
+          <a href="https://github.com/maxwellokumu" target="_blank" rel="noopener noreferrer" class="repo-card">
+            <div><div class="repo-name">maxwellokumu</div><div class="repo-desc">Systems architecture · AI pipelines · Full-stack</div></div>
+            <span class="repo-arrow">↗</span>
+          </a>
+          <a href="https://github.com/maxwellokumu" target="_blank" rel="noopener noreferrer" class="repo-card">
+            <div><div class="repo-name">Explore All →</div><div class="repo-desc">github.com/maxwellokumu</div></div>
+            <span class="repo-arrow">↗</span>
+          </a>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row" >
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" >
-                            <h2> <a href="https://jkusaonline.co.ke" target="_blank"> JKUSA ONLINE PORTAL </a></h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/jkusaonline.png" class="img-responsive img-centered" alt="">
-                            <p>Developed the JKUSA Online Portal, a comprehensive platform for JKUAT students that streamlines campus activities. The portal includes features such as user authentication, event management, blog CMS a clubs and societies module, in-built role based communication system and a bursary recommendation system. The portal also has incorporated a comprehensive Reporting and Analytics visialization tool. Built using core PHP, SQL, SCSS, Vanilla JS and Bootstrap for an efficient, user-friendly experience.  <a href="https://jkusaonline.co.ke" target="_blank"> JKUSA ONLINE PORTAL </a>
-                            </p>
-                            <br>
-                            <p>
-                               Key Features: 2fA, #1 SEO rank, AMP concepts, REST API
-                            </p>
-                            <a href="https://jkusaonline.co.ke"><button type="button" class="btn btn-default" ><i class="fa fa-times"></i>
-                                See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border);">
+          <div style="font-size:12px;font-family:var(--font-mono);color:var(--text3);margin-bottom:12px;letter-spacing:0.08em;">AREAS OF CONTRIBUTION</div>
+          <div class="tag-row">
+            <span class="tag">IT Audit Tooling</span>
+            <span class="tag">AI Workflows</span>
+            <span class="tag">Institutional Systems</span>
+            <span class="tag">LLM Pipelines</span>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact Maxwell Okumu">
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div class="section-label reveal" style="justify-content:center;">Contact</div>
+      <h2 class="reveal">Available for the<br/>Right Engagements</h2>
+      <p class="reveal">Available for consulting, system architecture, IT audit, and institutional projects. If your organisation needs structural thinking, not just technical labour — let's talk.</p>
+      <div class="contact-form reveal reveal-delay-1">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name"/>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Staqpesa.com</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/staqpesa.png" class="img-responsive img-centered" alt="">
-                            <p>Staqpesa, is a cloud-based savings/investment group accounting software as a service (SaaS) platform
-                            This has been among my most recent works; working collaboratively in a team of three. I was chiefly back end developer, mostly dealing in secure database communication in PHP and mysqlli. I was also involved in enforcing securty via both client_side validation(using scripts) and server side validation. Securing this system also included guarding against sql injections, directory traversals, denial of service and Man in the middle attacks. </p>
-                            <a href="https://www.staqpesa.com"><button type="button" class="btn btn-default" ><i class="fa fa-times"></i>
-                                See live Project</button></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email"/>
             </div>
-        </div>
+          </div>
+          <div class="form-group">
+            <label for="organisation">Organisation</label>
+            <input type="text" id="organisation" name="organisation" placeholder="Company / Institution name"/>
+          </div>
+          <div class="form-group">
+            <label for="engagement">Engagement Type</label>
+            <select id="engagement" name="engagement">
+              <option value="">Select engagement type</option>
+              <option>Systems Architecture</option>
+              <option>IT Audit & Governance</option>
+              <option>Agentic AI Engineering</option>
+              <option>Institutional Data Infrastructure</option>
+              <option>Research Collaboration</option>
+              <option>Academic Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell me about your project</label>
+            <textarea id="message" name="message" placeholder="Describe the challenge you're facing or the system you need built..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Message →</button>
+          <div class="form-status" id="formStatus" role="alert"></div>
+        </form>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Pinehouse Franchise .</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/pinehouse.png" class="img-responsive img-centered" alt="">
-                            <p>Engineered a comprehensive digital platform for Pinehouse Franchise, a leading suits-making entity. The solution includes advanced features for capturing precise customer measurements, seamless online payment processing, and integration with a POS system to streamline both in-store and online transactions. the web app contains capability to generate automated invoices as well as an email and Whatsapp intergration for seamless communication. Built using PHP, SQL, vanilla JavaScript, and Bootstrap, the platform offers a scalable and efficient system designed to enhance customer experience and operational efficiency.
-                            </p>
-                            <a href="https://pinehouse.co.ke"><button type="button" class="btn btn-default" ><i class="fa fa-times"></i>
-                                See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">M<span>.</span>Okumu</div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="projects.html">All Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#insights">Insights</a>
+      <a href="https://github.com/maxwellokumu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/maxwellokumu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+<img src="assets/images/logo-linkedin.png" alt="LinkedIn"/>
+      </a>
+      <a href="https://github.com/maxwellokumu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub"/>
+      </a>
+      <a href="https://stackoverflow.com/users/10407542/maxwell-okumu" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow">
+        <img src="https://cdn.simpleicons.org/stackoverflow/F58025" alt="Stack Overflow"/>
+      </a>
     </div>
+  </div>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 Maxwell Okumu · Systems Architect · IT Consultant · Nairobi, Kenya.</p>
+  </div>
+</footer>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Toilet Africa Initiative Website</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/toiletafrica.png" class="img-responsive img-centered" alt="">
-                            <p>Developed the digital platform for the Toilet Africa Initiative, an organization dedicated to improving sanitation across Africa. The platform features interactive tools for tracking project progress, donation management, and community engagement. Built using Wordpress, the site facilitates efficient communication between stakeholders and provides real-time updates on sanitation projects, driving the initiative’s mission forward.
-                            </p>
-                            <a href="https://toiletafricainitiative.org/"><button type="button" class="btn btn-default"><i class="fa fa-times"></i>
-                                    See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ARTICLE OVERLAYS -->
+<div class="article-overlay" id="article1" role="dialog" aria-modal="true">
+  <div class="article-modal">
+    <button class="article-close" onclick="closeArticle('article1')">✕</button>
+    <div class="insight-category">Systems Thinking</div>
+    <h2>Why Most Institutional Systems Fail — A Systems Perspective</h2>
+    <div class="article-body">
+      <p>Walk into almost any government ministry, parastatal, or large private institution in Kenya and ask the ICT team about their core systems. You will find one of three things: a system that was built years ago and no one fully understands anymore; a system that was recently procured at great expense and is barely used; or a gap where a system should exist, filled by spreadsheets and WhatsApp groups.</p>
+      <p>The failure, in almost every case, is not technical. It is architectural.</p>
+      <h3>The Illusion of the System</h3>
+      <p>Most institutional "systems" are not systems at all. They are collections of features — screens, buttons, fields — assembled by a vendor who understood the brief but not the institution. The institution accepted the deliverable, paid the invoice, and is now the custodian of something they cannot maintain, cannot extend, and cannot explain to their successor when they leave.</p>
+      <blockquote>"You cannot maintain what you did not design. You cannot extend what you did not architect."</blockquote>
+      <h4>The Root Cause</h4>
+      <p>Institutional system failure has a predictable anatomy:</p>
+      <ul>
+        <li><strong>Requirements were written by administrators, not systems thinkers.</strong> The brief described the current process — not the underlying need the process exists to serve.</li>
+        <li><strong>Procurement selected for price, not architecture.</strong> The lowest bidder won. The winning proposal had the best slides, not the best schema.</li>
+        <li><strong>No one owned the architecture.</strong> The vendor left. The IT team inherited a black box. The documentation was a manual, not a design spec.</li>
+        <li><strong>The system was built for today's organisation, not tomorrow's.</strong> Six months after launch, the institution reorganised, the workflow changed, and the system could not adapt.</li>
+      </ul>
+      <h3>What Architectural Thinking Actually Means</h3>
+      <p>A systems architect does not ask "what should this screen do?" They ask: what data does this institution generate, transform, and depend on? What are the trust boundaries? Where are the failure modes? What does this system need to look like in three years?</p>
+      <p>This is the gap Maxwell Okumu fills. Not as a vendor, but as a structural advisor — someone who sits on the institution's side of the table and designs systems that the institution can actually own, operate, and evolve.</p>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Reflex Concepts Website.</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/reflex.png" class="img-responsive img-centered" alt="">
-                            <p>Designed and developed the digital presence for Reflex Concepts KE, a creative design and branding agency. The platform showcases their portfolio, integrates a seamless inquiry system, and features a dynamic content management system for easy updates. Leveraging PHP, SQL, vanilla JavaScript, and Bootstrap, the site provides a sleek and responsive experience that reflects the innovative spirit of the brand.
-                            </p>
-                            <a href="https://reflexconcepts.co.ke"><button type="button" class="btn btn-default"><i class="fa fa-times"></i>
-                                    See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </div>
+</div>
+
+<div class="article-overlay" id="article2" role="dialog" aria-modal="true">
+  <div class="article-modal">
+    <button class="article-close" onclick="closeArticle('article2')">✕</button>
+    <div class="insight-category">AI Engineering</div>
+    <h2>Agentic AI Systems: The Next Layer of Software Engineering</h2>
+    <div class="article-body">
+      <p>For the last thirty years, software engineering has been fundamentally reactive. We build systems that wait for input, process it, and return output. That paradigm is ending.</p>
+      <p>Agentic AI systems do not wait. They plan, act, observe, and adapt — autonomously, across sequences of steps that no single prompt or API call could accomplish. This is not a productivity upgrade. It is a new layer of the engineering stack.</p>
+      <h3>What "Agentic" Actually Means</h3>
+      <p>An agentic system is one that can decompose a goal into sub-tasks, execute those sub-tasks using available tools, observe the results, and revise its plan accordingly — without human intervention at each step.</p>
+      <blockquote>"We are not building smarter chatbots. We are building autonomous systems that can act in the world. The engineering implications are profound."</blockquote>
+      <h4>The Architecture of Agency</h4>
+      <ul>
+        <li><strong>State management</strong> — agents must maintain context across long action sequences.</li>
+        <li><strong>Tool design</strong> — the tools an agent can use define the boundary of its capability. Tool design is the new API design.</li>
+        <li><strong>Failure modes</strong> — agents fail in ways that synchronous systems do not. Designing for graceful degradation requires thinking about agent failure.</li>
+        <li><strong>Evaluation</strong> — you cannot unit test an agent the way you test a function.</li>
+      </ul>
+      <h3>The East African Context</h3>
+      <p>In the Kenyan institutional context, agentic AI presents extraordinary opportunities — particularly in domains where skilled human labour is scarce and repetitive high-stakes processes are common. Academic evaluation, IT audit, compliance monitoring, and data governance are all candidates for agentic augmentation.</p>
+      <p>The question is not whether these systems will arrive. The question is whether East African institutions will be architects of these systems or merely consumers of them. Maxwell Okumu is working to ensure the former.</p>
     </div>
+  </div>
+</div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>TS BLOG CMS.</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/jkusaent.png" class="img-responsive img-centered" alt="">
-                            <p> The Trendsetter Blog CMS is a cutting-edge content management system designed to enhance the blogging experience with its powerful and intuitive features. This project focuses on delivering a seamless user interface that empowers bloggers to effortlessly manage their content, customize their site, and engage their audience effectively.
-                            </p>
-                            <a href="http://trendsetterblog.epizy.com"><button type="button" class="btn btn-default"><i
-                                        class="fa fa-times"></i>
-                                    See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="article-overlay" id="article3" role="dialog" aria-modal="true">
+  <div class="article-modal">
+    <button class="article-close" onclick="closeArticle('article3')">✕</button>
+    <div class="insight-category">EdTech</div>
+    <h2>Rethinking Academic Evaluation Through Algorithms</h2>
+    <div class="article-body">
+      <p>The examination system is a black box. A student submits work. Some days later, a mark appears. Between those two events is a process so opaque, so variable, and so dependent on the particular state of a particular evaluator on a particular day, that calling it a "system" in any meaningful engineering sense is generous.</p>
+      <p>I say this not to criticise lecturers. I am one. I say it because I have built an alternative — and the data is striking.</p>
+      <h3>The Problem Is Structural</h3>
+      <ul>
+        <li><strong>Evaluator variance</strong> — the same submission, evaluated by two different markers, routinely produces marks that diverge by 15–25%.</li>
+        <li><strong>Rubric opacity</strong> — most marking rubrics describe qualities without specifying the observable features that distinguish them.</li>
+        <li><strong>Scale failure</strong> — as student numbers grow, evaluation quality degrades.</li>
+      </ul>
+      <h4>The Algorithmic Alternative</h4>
+      <p>The AI-Assisted Academic Evaluation System I designed does not replace human judgement. It operationalises it. By extracting the implicit criteria inside a rubric and instantiating them as structured evaluation dimensions, the system creates a repeatable, auditable process where the evaluator's wisdom is encoded once and applied consistently at any scale.</p>
+      <blockquote>"The goal is not to remove the human from evaluation. It is to make evaluation worthy of a human's signature."</blockquote>
+      <h3>Multi-Pass Bias Mitigation</h3>
+      <p>The system runs each submission through multiple evaluation passes with different framing — a technique that surfaces variance in the model's own assessment. Where passes diverge significantly, the submission is flagged for human review. This is augmentation with a built-in quality gate.</p>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>The Ugandan.com.</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/ugandan.png" class="img-responsive img-centered" alt="">
-                            <p>Part of a two-member team that Developed The Ugandan.com, a news and media platform focused on delivering timely updates and insightful stories about Uganda. The site features a responsive design, dynamic content management system, and social media integration for broader audience engagement. Built using Elementor Pro and SQL. the platform ensures fast performance and an intuitive user experience across devices.
-                            </p>
-                            <a href="https://theugandan.com"><button type="button" class="btn btn-default"><i
-                                        class="fa fa-times"></i>
-                                    See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </div>
+</div>
+
+<div class="article-overlay" id="article4" role="dialog" aria-modal="true">
+  <div class="article-modal">
+    <button class="article-close" onclick="closeArticle('article4')">✕</button>
+    <div class="insight-category">IT Governance</div>
+    <h2>IT Audits in the Age of Data Privacy</h2>
+    <div class="article-body">
+      <p>Kenya's Data Protection Act 2019 changed the legal landscape. But changing the law does not change behaviour. Three years after its passage, most organisations subject to the Act are still treating data privacy as a compliance exercise — a form to fill, a policy to publish, a box to tick before the regulator calls.</p>
+      <p>This is a category error. Data privacy is not a compliance problem. It is an architectural one.</p>
+      <h3>What an IT Audit Actually Reveals</h3>
+      <ul>
+        <li><strong>Data inventories that don't match reality</strong> — organisations think they know what data they hold. Their systems tell a different story.</li>
+        <li><strong>Access controls that have drifted</strong> — the permissions matrix approved at system launch bears no resemblance to current access rights.</li>
+        <li><strong>Unencrypted data at rest</strong> — in categories that are plainly sensitive under the Act.</li>
+        <li><strong>Vendor agreements that transfer risk without transferring accountability.</strong></li>
+      </ul>
+      <blockquote>"The question is never whether your organisation has a data privacy policy. The question is whether your systems enforce it."</blockquote>
+      <h4>The Remediation Architecture</h4>
+      <p>An IT audit that ends with a risk register is half an audit. The value is in the remediation architecture — the specific, sequenced set of technical and governance changes that move the institution from its current state to a defensible compliance posture.</p>
+      <h3>Zero Trust as the New Baseline</h3>
+      <p>The Zero Trust security model — never trust, always verify — is not a product. It is an architectural philosophy. For Kenyan institutions navigating the Data Protection Act, Zero Trust is not aspirational. It is the direction of travel.</p>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Official Trendsetter inc. Website</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/tshome.png" class="img-responsive img-centered" alt="">
-                            <p>This is the official Website for Trendsetter inc. A multisite with APIs giving functionality to the
-                                the Blog and Events Modules on the platform. The external Sites linked via ApIs are Ts Events and Ts Blog.
-                            </p>
-                            <a href="http://trendsetters.co.ke"><button type="button" class="btn btn-default"><i
-                                        class="fa fa-times"></i>
-                                    See live Project</button></a>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-                                Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <!-- Hobbies Modals -->
-    <div class="portfolio-modal modal fade" id="hobbiesModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Kenya Revenue Authority/Business Systems Analyst</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/kralogo.png" class="img-responsive img-centered" alt="">
-                            <p>As a Business Systems Analyst at the Kenya Revenue Authority (KRA), I played a key role in enhancing the efficiency of various business processes. My responsibilities included gathering and analyzing system requirements, designing solutions to optimize workflows, and collaborating with stakeholders to ensure alignment with organizational goals. I worked closely with developers to implement and maintain critical systems, ensuring they met user needs while adhering to compliance standards. Additionally, I conducted system testing, troubleshooting, and user training to facilitate smooth transitions to new technologies, ultimately improving overall system performance and operational efficiency. <stage class=""></stage>
-                            </p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="hobbiesModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row" >
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" >
-                            <h2>Trendsetters: Start-up</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/tstvlogo.jpg" class="img-responsive img-centered" alt="">
-                            <p> 
-                                Founded Trendsetters inc.  A Kenyan start up that uses AI and user preference data to recommend suitable micro, macro and niche influencers for specific brands and campaigns 
-                            </p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="hobbiesModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Reflex Concepts (Full stack Software Development Consultant)</h2>
-                            <hr class="star-primary2">
-                            <img src="img/portfolio/reflex.jpeg" class="img-responsive img-centered" alt="">
-                            <p>
-                                As a Full Stack Software Development Consultant at Reflex Concepts KE, I provide comprehensive solutions across the entire software development lifecycle. My role involves designing and implementing both frontend and backend components, ensuring seamless integration and optimal performance. I collaborate closely with clients to understand their needs and translate them into functional and scalable applications. Leveraging my expertise in technologies such as PHP, SQL, and JavaScript, I develop robust systems that enhance user experiences and streamline business processes. My contributions include developing dynamic web applications, optimizing existing systems, and integrating innovative features to meet evolving client requirements.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+  </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+<script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let cx = 0, cy = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { cx = e.clientX; cy = e.clientY; });
+  function animCursor() {
+    cursor.style.left = cx + 'px'; cursor.style.top = cy + 'px';
+    rx += (cx - rx) * 0.12; ry += (cy - ry) * 0.12;
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    requestAnimationFrame(animCursor);
+  }
+  animCursor();
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  // Nav scroll
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 40); });
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  function closeMobile() { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded', false); }
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-     <!--<script src="js/contact_me.js"></script>-->
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-   
+  // Skill bars
+  const skillObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.skill-fill').forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.skill-group').forEach(g => skillObs.observe(g));
 
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+  // Article modal
+  function openArticle(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeArticle(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+  document.querySelectorAll('.article-overlay').forEach(overlay => {
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeArticle(overlay.id); });
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.querySelectorAll('.article-overlay.open').forEach(o => closeArticle(o.id));
+  });
 
-    <!-- My Code -->
-    <script src="js/myfile.js"></script>
-    
-    <!-- AOS paralax sliding import -->
-    <script src="dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: 'ease-in-out-sine'
-      });
-    </script>
+  // Video loaders
+  function loadYoutube(el, videoId) {
+    const parent = el.parentElement;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    iframe.allow = 'autoplay; encrypted-media'; iframe.allowFullscreen = true;
+    iframe.style.cssText = 'width:100%;height:100%;border:none;position:absolute;inset:0;';
+    parent.style.position = 'relative'; parent.innerHTML = ''; parent.appendChild(iframe);
+  }
+  function loadGithubVideo(el, filename) {
+    const parent = el.parentElement;
+    const video = document.createElement('video');
+    video.src = `assets/${filename}`; video.controls = true; video.autoplay = true;
+    video.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+    parent.innerHTML = ''; parent.appendChild(video);
+  }
 
+  // Contact form
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  if (form) {
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type=submit]');
+      btn.textContent = 'Sending...'; btn.disabled = true;
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        status.style.display = 'block';
+        if (res.ok) { status.textContent = '✓ Message received. Maxwell will respond within 48 hours.'; form.reset(); }
+        else { status.style.color = '#ef4444'; status.textContent = 'Something went wrong. Please email directly.'; }
+      } catch { status.style.display = 'block'; status.style.color = '#ef4444'; status.textContent = 'Network error. Please try again.'; }
+      btn.textContent = 'Send Message →'; btn.disabled = false;
+    });
+  }
+</script>
 </body>
-
 </html>
